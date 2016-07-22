@@ -1,6 +1,6 @@
 Library {
   Name			  "xps_library"
-  Version		  8.1
+  Version		  8.0
   MdlSubVersion		  0
   SavedCharacterEncoding  "UTF-8"
   LibraryType		  "BlockLibrary"
@@ -19,7 +19,7 @@ Library {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-1.0, 2.0, 1922.0, 1082.0]
+      Location		      [557.0, 98.0, 1542.0, 1101.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -41,11 +41,11 @@ Library {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1884.0, 909.0]
-	ZoomFactor		[0.8]
-	Offset			[-822.131767515921, 283.53861464968168]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"16"
+	Extents			[1504.0, 947.0]
+	ZoomFactor		[1.25]
+	Offset			[440.80000000000018, 133.6]
       }
     }
   }
@@ -53,11 +53,11 @@ Library {
   Creator		  "hchen05"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "jackh"
+  LastModifiedBy	  "root"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri May 29 14:42:57 2015"
-  RTWModifiedTimeStamp	  354811373
-  ModelVersionFormat	  "1.%<AutoIncrement:523>"
+  LastModifiedDate	  "Sun Jun 19 19:11:27 2016"
+  RTWModifiedTimeStamp	  388261565
+  ModelVersionFormat	  "1.%<AutoIncrement:526>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -126,13 +126,13 @@ Library {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      6
-      Version		      "1.13.0"
+      Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
 	  $ObjectID		  7
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  StartTime		  "0.0"
 	  StopTime		  "10.0"
 	  AbsTol		  "auto"
@@ -167,7 +167,7 @@ Library {
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  8
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -199,7 +199,7 @@ Library {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  9
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    4
@@ -251,7 +251,7 @@ Library {
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  10
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
@@ -341,12 +341,11 @@ Library {
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  11
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
 	  ProdBitPerLong	  32
-	  ProdBitPerLongLong	  64
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
@@ -356,20 +355,17 @@ Library {
 	  ProdEndianess		  "Unspecified"
 	  ProdWordSize		  32
 	  ProdShiftRightIntArith  on
-	  ProdLongLongMode	  off
 	  ProdHWDeviceType	  "32-bit Generic"
 	  TargetBitPerChar	  8
 	  TargetBitPerShort	  16
 	  TargetBitPerInt	  32
 	  TargetBitPerLong	  32
-	  TargetBitPerLongLong	  64
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
-	  TargetLongLongMode	  off
 	  TargetIntDivRoundTo	  "Undefined"
 	  TargetEndianess	  "Unspecified"
 	  TargetWordSize	  32
@@ -382,7 +378,7 @@ Library {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  12
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
@@ -397,7 +393,7 @@ Library {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  13
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
 	  SFSimEcho		  on
@@ -412,7 +408,7 @@ Library {
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  14
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    6
@@ -452,7 +448,6 @@ Library {
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
 	  CodeProfilingInstrumentation off
-	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
 	  IncludeERTFirstTime	  off
@@ -473,7 +468,7 @@ Library {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      15
-	      Version		      "1.13.0"
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		17
@@ -536,7 +531,7 @@ Library {
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      16
-	      Version		      "1.13.0"
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		15
@@ -593,12 +588,10 @@ Library {
 	      SupportVariableSizeSignals off
 	      EnableShiftOperators    on
 	      ParenthesesLevel	      "Nominal"
-	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    off
 	      AutosarCompliant	      off
 	      GRTInterface	      on
-	      GenerateAllocFcn	      off
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -695,10 +688,30 @@ Library {
       PreserveConstantTs      off
     }
     Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      From
       GotoTag		      "A"
       IconDisplay	      "Tag"
       TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      OutDataTypeStr	      "Inherit: auto"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
     }
     Block {
       BlockType		      Gain
@@ -717,7 +730,6 @@ Library {
     }
     Block {
       BlockType		      Goto
-      GotoTag		      "A"
       IconDisplay	      "Tag"
       TagVisibility	      "local"
     }
@@ -775,7 +787,6 @@ Library {
       SystemSampleTime	      "-1"
       RTWFcnNameOpts	      "Auto"
       RTWFileNameOpts	      "Auto"
-      FunctionInterfaceSpec   "void_void"
       RTWMemSecFuncInitTerm   "Inherit from model"
       RTWMemSecFuncExecute    "Inherit from model"
       RTWMemSecDataConstants  "Inherit from model"
@@ -812,7 +823,7 @@ Library {
   System {
     Name		    "xps_library"
     Location		    [-1, 2, 1921, 1084]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -825,7 +836,7 @@ Library {
     ShowPageBoundaries	    off
     ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "355"
+    SIDHighWatermark	    "367"
     Block {
       BlockType		      SubSystem
       Name		      "1new_yellow_block"
@@ -875,7 +886,7 @@ Library {
       MaskHideContents	      off
       System {
 	Name			"ADCs"
-	Location		[2136, 35, 3676, 1113]
+	Location		[557, 98, 2099, 1199]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -887,7 +898,7 @@ Library {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"300"
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "adc083000_ctrl"
@@ -6662,8 +6673,9 @@ Library {
 	  Tag			  "xps:adc_mkid"
 	  Ports			  [0, 5]
 	  Position		  [35, 49, 105, 211]
-	  ZOrder		  -5
+	  ZOrder		  8797
 	  BackgroundColor	  "[1.000000, 1.000000, 0.000000]"
+	  LibraryVersion	  "*1.522"
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
 	  RTWSystemCode		  "Auto"
@@ -6710,8 +6722,8 @@ Library {
 	  }
 	  System {
 	    Name		    "adc_mkid"
-	    Location		    [74, 45, 1303, 1752]
-	    Open		    off
+	    Location		    [557, 98, 2099, 1199]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -6722,15 +6734,357 @@ Library {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "42"
+	    ZoomFactor		    "125"
+	    SIDHighWatermark	    "146"
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "16:87"
+	      Position		      [500, 553, 530, 587]
+	      ZOrder		      3
+	      Value		      "0"
+	      VectorParams1D	      off
+	      SampleTime	      "1"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "16:130"
+	      Position		      [380, 448, 410, 482]
+	      ZOrder		      6239
+	      Commented		      on
+	      Value		      "0"
+	      VectorParams1D	      off
+	      SampleTime	      "1"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      "16:131"
+	      Position		      [380, 208, 410, 242]
+	      ZOrder		      6240
+	      Commented		      on
+	      Value		      "0"
+	      VectorParams1D	      off
+	      SampleTime	      "1"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion"
+	      SID		      "16:126"
+	      Position		      [595, 163, 635, 177]
+	      ZOrder		      6235
+	      OutMax		      "[2^13-1]"
+	      OutDataTypeStr	      "double"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion1"
+	      SID		      "16:127"
+	      Position		      [595, 373, 635, 387]
+	      ZOrder		      6236
+	      OutMax		      "[2^13-1]"
+	      OutDataTypeStr	      "double"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From Workspace"
+	      SID		      "16:94"
+	      Position		      [465, 158, 530, 182]
+	      ZOrder		      6199
+	      VariableName	      "var_I0"
+	      SampleTime	      "1"
+	      Interpolate	      off
+	      OutputAfterFinalValue   "Holding final value"
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From Workspace1"
+	      SID		      "16:99"
+	      Position		      [465, 368, 530, 392]
+	      ZOrder		      6204
+	      VariableName	      "var_Q0"
+	      SampleTime	      "1"
+	      Interpolate	      off
+	      OutputAfterFinalValue   "Holding final value"
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From Workspace2"
+	      SID		      "16:128"
+	      Position		      [465, 258, 530, 282]
+	      ZOrder		      6237
+	      VariableName	      "var_I1"
+	      SampleTime	      "1"
+	      Interpolate	      off
+	      OutputAfterFinalValue   "Holding final value"
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From Workspace3"
+	      SID		      "16:129"
+	      Position		      [465, 468, 530, 492]
+	      ZOrder		      6238
+	      VariableName	      "var_Q1"
+	      SampleTime	      "1"
+	      Interpolate	      off
+	      OutputAfterFinalValue   "Holding final value"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Reinterpret"
+	      SID		      "16:118"
+	      Ports		      [1, 1]
+	      Position		      [1030, 99, 1070, 131]
+	      ZOrder		      6227
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreter Block"
+	      infoedit		      "Changes signal type without altering the binary representation.   You can change the signal be"
+	      "tween signed and unsigned, and relocate the binary point.<br><br>Hardware notes: In hardware this block costs n"
+	      "othing.<br><br>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is fo"
+	      "rced to unsigned with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an o"
+	      "utput of 56 (111000 in binary)."
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "11"
+	      has_advanced_control    "0"
+	      sggui_pos		      "37,14,364,363"
+	      block_type	      "reinterpret"
+	      block_version	      "8.2.02"
+	      sg_icon_stat	      "40,32,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 40 40 0 0 ],[0 0 32 32 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 40 40 0 0 ],[0 0 32 32 0 ]);\npatch([11.1 16.88 20.88 24.88 28.88 20.88 15.1 11.1 ],[20.4"
+	      "4 20.44 24.44 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([15.1 20.88 16.88 11.1 15.1 ],[16.44 16.44 20.4"
+	      "4 20.44 16.44 ],[0.931 0.946 0.973 ]);\npatch([11.1 16.88 20.88 15.1 11.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1"
+	      " 1 1 ]);\npatch([15.1 28.88 24.88 20.88 16.88 11.1 15.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946"
+	      " 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('blac"
+	      "k');disp('reinterpret');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Reinterpret1"
+	      SID		      "16:120"
+	      Ports		      [1, 1]
+	      Position		      [1030, 209, 1070, 241]
+	      ZOrder		      6229
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreter Block"
+	      infoedit		      "Changes signal type without altering the binary representation.   You can change the signal be"
+	      "tween signed and unsigned, and relocate the binary point.<br><br>Hardware notes: In hardware this block costs n"
+	      "othing.<br><br>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is fo"
+	      "rced to unsigned with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an o"
+	      "utput of 56 (111000 in binary)."
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "11"
+	      has_advanced_control    "0"
+	      sggui_pos		      "37,14,364,363"
+	      block_type	      "reinterpret"
+	      block_version	      "8.2.02"
+	      sg_icon_stat	      "40,32,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 40 40 0 0 ],[0 0 32 32 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 40 40 0 0 ],[0 0 32 32 0 ]);\npatch([11.1 16.88 20.88 24.88 28.88 20.88 15.1 11.1 ],[20.4"
+	      "4 20.44 24.44 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([15.1 20.88 16.88 11.1 15.1 ],[16.44 16.44 20.4"
+	      "4 20.44 16.44 ],[0.931 0.946 0.973 ]);\npatch([11.1 16.88 20.88 15.1 11.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1"
+	      " 1 1 ]);\npatch([15.1 28.88 24.88 20.88 16.88 11.1 15.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946"
+	      " 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('blac"
+	      "k');disp('reinterpret');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Reinterpret2"
+	      SID		      "16:122"
+	      Ports		      [1, 1]
+	      Position		      [1030, 314, 1070, 346]
+	      ZOrder		      6231
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreter Block"
+	      infoedit		      "Changes signal type without altering the binary representation.   You can change the signal be"
+	      "tween signed and unsigned, and relocate the binary point.<br><br>Hardware notes: In hardware this block costs n"
+	      "othing.<br><br>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is fo"
+	      "rced to unsigned with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an o"
+	      "utput of 56 (111000 in binary)."
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "11"
+	      has_advanced_control    "0"
+	      sggui_pos		      "37,14,364,363"
+	      block_type	      "reinterpret"
+	      block_version	      "8.2.02"
+	      sg_icon_stat	      "40,32,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 40 40 0 0 ],[0 0 32 32 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 40 40 0 0 ],[0 0 32 32 0 ]);\npatch([11.1 16.88 20.88 24.88 28.88 20.88 15.1 11.1 ],[20.4"
+	      "4 20.44 24.44 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([15.1 20.88 16.88 11.1 15.1 ],[16.44 16.44 20.4"
+	      "4 20.44 16.44 ],[0.931 0.946 0.973 ]);\npatch([11.1 16.88 20.88 15.1 11.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1"
+	      " 1 1 ]);\npatch([15.1 28.88 24.88 20.88 16.88 11.1 15.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946"
+	      " 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('blac"
+	      "k');disp('reinterpret');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Reinterpret3"
+	      SID		      "16:124"
+	      Ports		      [1, 1]
+	      Position		      [1030, 414, 1070, 446]
+	      ZOrder		      6233
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreter Block"
+	      infoedit		      "Changes signal type without altering the binary representation.   You can change the signal be"
+	      "tween signed and unsigned, and relocate the binary point.<br><br>Hardware notes: In hardware this block costs n"
+	      "othing.<br><br>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is fo"
+	      "rced to unsigned with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an o"
+	      "utput of 56 (111000 in binary)."
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "11"
+	      has_advanced_control    "0"
+	      sggui_pos		      "37,14,364,363"
+	      block_type	      "reinterpret"
+	      block_version	      "8.2.02"
+	      sg_icon_stat	      "40,32,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 40 40 0 0 ],[0 0 32 32 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 40 40 0 0 ],[0 0 32 32 0 ]);\npatch([11.1 16.88 20.88 24.88 28.88 20.88 15.1 11.1 ],[20.4"
+	      "4 20.44 24.44 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([15.1 20.88 16.88 11.1 15.1 ],[16.44 16.44 20.4"
+	      "4 20.44 16.44 ],[0.931 0.946 0.973 ]);\npatch([11.1 16.88 20.88 15.1 11.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1"
+	      " 1 1 ]);\npatch([15.1 28.88 24.88 20.88 16.88 11.1 15.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946"
+	      " 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('blac"
+	      "k');disp('reinterpret');\nfprintf('','COMMENT: end icon text');"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Simulation Multiplexer"
+	      SID		      "16:132"
+	      Ports		      [2, 1]
+	      Position		      [1175, 132, 1225, 183]
+	      ZOrder		      6241
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Simulation Multiplexer"
+	      SourceType	      "Xilinx Simulation Multiplexer Block"
+	      infoedit		      "Distinguish input subsystems as \"simulation only\" and \"generation only\".  The input specif"
+	      "ied For Simulation will be used during Simulink simulation.  The input specified For Generation will be used du"
+	      "ring code generation.  This block will typically be used on the output of a HW Co-Simulation, Black Box, or Mod"
+	      "elSim subsystem.<br><br>Hardware Notes: This block costs nothing."
+	      sim_sel		      "1"
+	      hw_sel		      "2"
+	      has_advanced_control    "0"
+	      sggui_pos		      "800,209,398,250"
+	      block_type	      "simmux"
+	      sg_icon_stat	      "50,51,2,1,white,blue,0,4170dd71,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 51 51 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 51 51 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],["
+	      "32.77 32.77 39.77 32.77 39.77 39.77 39.77 32.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[25.77 2"
+	      "5.77 32.77 32.77 25.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[18.77 18.77 25.77 25."
+	      "77 18.77 ],[1 1 1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[11.77 11.77 18.77 11.77 18.77 18.7"
+	      "7 11.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
+	      "xt');\n\n\n\nfprintf('','COMMENT: end icon text');color('red');\nplot(swLineX,simSwLineY);\ncolor('black');\npl"
+	      "ot(swLineX,hwSwLineY);\n"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Simulation Multiplexer1"
+	      SID		      "16:133"
+	      Ports		      [2, 1]
+	      Position		      [1175, 232, 1225, 283]
+	      ZOrder		      6242
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Simulation Multiplexer"
+	      SourceType	      "Xilinx Simulation Multiplexer Block"
+	      infoedit		      "Distinguish input subsystems as \"simulation only\" and \"generation only\".  The input specif"
+	      "ied For Simulation will be used during Simulink simulation.  The input specified For Generation will be used du"
+	      "ring code generation.  This block will typically be used on the output of a HW Co-Simulation, Black Box, or Mod"
+	      "elSim subsystem.<br><br>Hardware Notes: This block costs nothing."
+	      sim_sel		      "1"
+	      hw_sel		      "2"
+	      has_advanced_control    "0"
+	      sggui_pos		      "800,209,398,250"
+	      block_type	      "simmux"
+	      sg_icon_stat	      "50,51,2,1,white,blue,0,4170dd71,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 51 51 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 51 51 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],["
+	      "32.77 32.77 39.77 32.77 39.77 39.77 39.77 32.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[25.77 2"
+	      "5.77 32.77 32.77 25.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[18.77 18.77 25.77 25."
+	      "77 18.77 ],[1 1 1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[11.77 11.77 18.77 11.77 18.77 18.7"
+	      "7 11.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
+	      "xt');\n\n\n\nfprintf('','COMMENT: end icon text');color('red');\nplot(swLineX,simSwLineY);\ncolor('black');\npl"
+	      "ot(swLineX,hwSwLineY);\n"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Simulation Multiplexer2"
+	      SID		      "16:134"
+	      Ports		      [2, 1]
+	      Position		      [1175, 342, 1225, 393]
+	      ZOrder		      6243
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Simulation Multiplexer"
+	      SourceType	      "Xilinx Simulation Multiplexer Block"
+	      infoedit		      "Distinguish input subsystems as \"simulation only\" and \"generation only\".  The input specif"
+	      "ied For Simulation will be used during Simulink simulation.  The input specified For Generation will be used du"
+	      "ring code generation.  This block will typically be used on the output of a HW Co-Simulation, Black Box, or Mod"
+	      "elSim subsystem.<br><br>Hardware Notes: This block costs nothing."
+	      sim_sel		      "1"
+	      hw_sel		      "2"
+	      has_advanced_control    "0"
+	      sggui_pos		      "800,209,398,250"
+	      block_type	      "simmux"
+	      sg_icon_stat	      "50,51,2,1,white,blue,0,4170dd71,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 51 51 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 51 51 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],["
+	      "32.77 32.77 39.77 32.77 39.77 39.77 39.77 32.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[25.77 2"
+	      "5.77 32.77 32.77 25.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[18.77 18.77 25.77 25."
+	      "77 18.77 ],[1 1 1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[11.77 11.77 18.77 11.77 18.77 18.7"
+	      "7 11.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
+	      "xt');\n\n\n\nfprintf('','COMMENT: end icon text');color('red');\nplot(swLineX,simSwLineY);\ncolor('black');\npl"
+	      "ot(swLineX,hwSwLineY);\n"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Simulation Multiplexer3"
+	      SID		      "16:135"
+	      Ports		      [2, 1]
+	      Position		      [1175, 442, 1225, 493]
+	      ZOrder		      6244
+	      LibraryVersion	      "1.2"
+	      SourceBlock	      "xbsIndex_r4/Simulation Multiplexer"
+	      SourceType	      "Xilinx Simulation Multiplexer Block"
+	      infoedit		      "Distinguish input subsystems as \"simulation only\" and \"generation only\".  The input specif"
+	      "ied For Simulation will be used during Simulink simulation.  The input specified For Generation will be used du"
+	      "ring code generation.  This block will typically be used on the output of a HW Co-Simulation, Black Box, or Mod"
+	      "elSim subsystem.<br><br>Hardware Notes: This block costs nothing."
+	      sim_sel		      "1"
+	      hw_sel		      "2"
+	      has_advanced_control    "0"
+	      sggui_pos		      "800,209,398,250"
+	      block_type	      "simmux"
+	      sg_icon_stat	      "50,51,2,1,white,blue,0,4170dd71,right,,[ ],[ ]"
+	      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 51 51 0 ],[0.77 0"
+	      ".82 0.91 ]);\nplot([0 50 50 0 0 ],[0 0 51 51 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],["
+	      "32.77 32.77 39.77 32.77 39.77 39.77 39.77 32.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[25.77 2"
+	      "5.77 32.77 32.77 25.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[18.77 18.77 25.77 25."
+	      "77 18.77 ],[1 1 1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[11.77 11.77 18.77 11.77 18.77 18.7"
+	      "7 11.77 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
+	      "xt');\n\n\n\nfprintf('','COMMENT: end icon text');color('red');\nplot(swLineX,simSwLineY);\ncolor('black');\npl"
+	      "ot(swLineX,hwSwLineY);\n"
+	    }
 	    Block {
 	      BlockType		      SubSystem
-	      Name		      "conv"
-	      SID		      "16:1"
+	      Name		      "conv0"
+	      SID		      "16:136"
 	      Ports		      [1, 1]
-	      Position		      [385, 35, 465, 65]
-	      ZOrder		      -1
+	      Position		      [1010, 155, 1090, 185]
+	      ZOrder		      6245
 	      MinAlgLoopOccurrences   off
 	      PropExecContextOutsideSubsystem off
 	      RTWSystemCode	      "Auto"
@@ -6746,8 +7100,8 @@ Library {
 		"e arbitrary \nwidth inputs."
 	      }
 	      System {
-		Name			"conv"
-		Location		[47, 45, 762, 1358]
+		Name			"conv0"
+		Location		[12, 45, 823, 1828]
 		Open			off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -6763,7 +7117,7 @@ Library {
 		Block {
 		  BlockType		  Inport
 		  Name			  "In1"
-		  SID			  "16:2"
+		  SID			  "16:137"
 		  Position		  [25, 38, 55, 52]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -6771,10 +7125,11 @@ Library {
 		Block {
 		  BlockType		  Reference
 		  Name			  "Concat"
-		  SID			  "16:3"
+		  SID			  "16:138"
 		  Ports			  [2, 1]
 		  Position		  [265, 32, 315, 83]
 		  ZOrder		  -2
+		  LibraryVersion	  "1.2"
 		  SourceBlock		  "xbsIndex_r4/Concat"
 		  SourceType		  "Xilinx Bus Concatenator Block"
 		  infoedit		  "Concatenates two or more inputs.  Output will be cast to an unsigned value with the binary point at z"
@@ -6798,10 +7153,11 @@ Library {
 		Block {
 		  BlockType		  Reference
 		  Name			  "Inverter"
-		  SID			  "16:4"
+		  SID			  "16:139"
 		  Ports			  [1, 1]
 		  Position		  [175, 28, 225, 62]
 		  ZOrder		  -3
+		  LibraryVersion	  "1.2"
 		  SourceBlock		  "xbsIndex_r4/Inverter"
 		  SourceType		  "Xilinx Inverter Block"
 		  infoedit		  "Bitwise logical negation (one's complement) operator."
@@ -6826,10 +7182,11 @@ Library {
 		Block {
 		  BlockType		  Reference
 		  Name			  "Reinterpret"
-		  SID			  "16:5"
+		  SID			  "16:140"
 		  Ports			  [1, 1]
 		  Position		  [355, 44, 395, 76]
 		  ZOrder		  -4
+		  LibraryVersion	  "1.2"
 		  SourceBlock		  "xbsIndex_r4/Reinterpret"
 		  SourceType		  "Xilinx Type Reinterpreter Block"
 		  infoedit		  "Changes signal type without altering the binary representation.   You can changed the signal between "
@@ -6857,10 +7214,11 @@ Library {
 		Block {
 		  BlockType		  Reference
 		  Name			  "Slice"
-		  SID			  "16:6"
+		  SID			  "16:141"
 		  Ports			  [1, 1]
 		  Position		  [100, 31, 145, 59]
 		  ZOrder		  -5
+		  LibraryVersion	  "1.2"
 		  SourceBlock		  "xbsIndex_r4/Slice"
 		  SourceType		  "Xilinx Bit Slice Extractor Block"
 		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
@@ -6890,10 +7248,11 @@ Library {
 		Block {
 		  BlockType		  Reference
 		  Name			  "Slice1"
-		  SID			  "16:7"
+		  SID			  "16:142"
 		  Ports			  [1, 1]
 		  Position		  [100, 86, 145, 114]
 		  ZOrder		  -6
+		  LibraryVersion	  "1.2"
 		  SourceBlock		  "xbsIndex_r4/Slice"
 		  SourceType		  "Xilinx Bit Slice Extractor Block"
 		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
@@ -6923,760 +7282,7 @@ Library {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out1"
-		  SID			  "16:8"
-		  Position		  [420, 53, 450, 67]
-		  ZOrder		  -7
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  SrcBlock		  "Reinterpret"
-		  SrcPort		  1
-		  DstBlock		  "Out1"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Concat"
-		  SrcPort		  1
-		  DstBlock		  "Reinterpret"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Slice1"
-		  SrcPort		  1
-		  Points		  [100, 0]
-		  DstBlock		  "Concat"
-		  DstPort		  2
-		}
-		Line {
-		  SrcBlock		  "Inverter"
-		  SrcPort		  1
-		  DstBlock		  "Concat"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Slice"
-		  SrcPort		  1
-		  DstBlock		  "Inverter"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "In1"
-		  SrcPort		  1
-		  Points		  [0, 0; 15, 0]
-		  Branch {
-		    DstBlock		    "Slice"
-		    DstPort		    1
-		  }
-		  Branch {
-		    Points		    [0, 55]
-		    DstBlock		    "Slice1"
-		    DstPort		    1
-		  }
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "conv1"
-	      SID		      "16:9"
-	      Ports		      [1, 1]
-	      Position		      [390, 135, 470, 165]
-	      ZOrder		      -2
-	      MinAlgLoopOccurrences   off
-	      PropExecContextOutsideSubsystem off
-	      RTWSystemCode	      "Auto"
-	      FunctionWithSeparateData off
-	      Opaque		      off
-	      RequestExecContextInheritance off
-	      MaskHideContents	      off
-	      Object {
-		$PropName		"MaskObject"
-		$ObjectID		44
-		$ClassName		"Simulink.Mask"
-		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
-		"e arbitrary \nwidth inputs."
-	      }
-	      System {
-		Name			"conv1"
-		Location		[47, 45, 762, 1358]
-		Open			off
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"usletter"
-		PaperUnits		"inches"
-		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-		Block {
-		  BlockType		  Inport
-		  Name			  "In1"
-		  SID			  "16:10"
-		  Position		  [25, 38, 55, 52]
-		  ZOrder		  -1
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Concat"
-		  SID			  "16:11"
-		  Ports			  [2, 1]
-		  Position		  [265, 32, 315, 83]
-		  ZOrder		  -2
-		  SourceBlock		  "xbsIndex_r4/Concat"
-		  SourceType		  "Xilinx Bus Concatenator Block"
-		  infoedit		  "Concatenates two or more inputs.  Output will be cast to an unsigned value with the binary point at z"
-		  "ero."
-		  num_inputs		  "2"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,336,162"
-		  block_type		  "concat"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "50,51,2,1,white,blue,0,16398980,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 51 51 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 50 50 0 0 ],[0 0 51 51 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[32.77 32.7"
-		  "7 39.77 32.77 39.77 39.77 39.77 32.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[25.77 25.77 32.77 32"
-		  ".77 25.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[18.77 18.77 25.77 25.77 18.77 ],[1 1 "
-		  "1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[11.77 11.77 18.77 11.77 18.77 18.77 11.77 ],[0.931 0."
-		  "946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-		  "port_label('input',1,'hi');\ncolor('black');port_label('input',2,'lo');\n\ncolor('black');disp('\\fontsize{20}\\}'"
-		  ",'texmode','on');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Inverter"
-		  SID			  "16:12"
-		  Ports			  [1, 1]
-		  Position		  [175, 28, 225, 62]
-		  ZOrder		  -3
-		  SourceBlock		  "xbsIndex_r4/Inverter"
-		  SourceType		  "Xilinx Inverter Block"
-		  infoedit		  "Bitwise logical negation (one's complement) operator."
-		  en			  off
-		  latency		  "0"
-		  dbl_ovrd		  off
-		  xl_use_area		  off
-		  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
-		  has_advanced_control	  "0"
-		  sggui_pos		  "-1,-1,-1,-1"
-		  block_type		  "inv"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "50,34,1,1,white,blue,0,267846e5,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 34 34 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 50 50 0 0 ],[0 0 34 34 0 ]);\npatch([16.1 21.88 25.88 29.88 33.88 25.88 20.1 16.1 ],[21.44 21.44 25"
-		  ".44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([20.1 25.88 21.88 16.1 20.1 ],[17.44 17.44 21.44 21.44 17.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([16.1 21.88 25.88 20.1 16.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\npatch("
-		  "[20.1 33.88 29.88 25.88 21.88 16.1 20.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('not');\nfpri"
-		  "ntf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Reinterpret"
-		  SID			  "16:13"
-		  Ports			  [1, 1]
-		  Position		  [355, 44, 395, 76]
-		  ZOrder		  -4
-		  SourceBlock		  "xbsIndex_r4/Reinterpret"
-		  SourceType		  "Xilinx Type Reinterpreter Block"
-		  infoedit		  "Changes signal type without altering the binary representation.   You can changed the signal between "
-		  "signed and unsigned, and relocate the binary point.<P><P>Hardware notes: In hardware this block costs nothing.<P><"
-		  "P>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is forced to unsigned"
-		  " with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an output of 56 (111000"
-		  " in binary)."
-		  force_arith_type	  on
-		  arith_type		  "Signed  (2's comp)"
-		  force_bin_pt		  on
-		  bin_pt		  "11"
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,356,312"
-		  block_type		  "reinterpret"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "40,32,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 40 40 0 0 ],[0 0 32 32 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 40 40 0 0 ],[0 0 32 32 0 ]);\npatch([11.1 16.88 20.88 24.88 28.88 20.88 15.1 11.1 ],[20.44 20.44 24"
-		  ".44 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([15.1 20.88 16.88 11.1 15.1 ],[16.44 16.44 20.44 20.44 16.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([11.1 16.88 20.88 15.1 11.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1 1 1 ]);\npatch("
-		  "[15.1 28.88 24.88 20.88 16.88 11.1 15.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('reinterpret'"
-		  ");\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Slice"
-		  SID			  "16:14"
-		  Ports			  [1, 1]
-		  Position		  [100, 31, 145, 59]
-		  ZOrder		  -5
-		  SourceBlock		  "xbsIndex_r4/Slice"
-		  SourceType		  "Xilinx Bit Slice Extractor Block"
-		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
-		  " is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<P><P>Hardwar"
-		  "e notes: In hardware this block costs nothing."
-		  nbits			  "1"
-		  boolean_output	  off
-		  mode			  "Upper Bit Location + Width"
-		  bit1			  "0"
-		  base1			  "MSB of Input"
-		  bit0			  "0"
-		  base0			  "LSB of Input"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,460,407"
-		  block_type		  "slice"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "45,28,1,1,white,blue,0,1fd851a7,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 28 28 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 45 45 0 0 ],[0 0 28 28 0 ]);\npatch([13.1 18.88 22.88 26.88 30.88 22.88 17.1 13.1 ],[18.44 18.44 22"
-		  ".44 18.44 22.44 22.44 22.44 18.44 ],[1 1 1 ]);\npatch([17.1 22.88 18.88 13.1 17.1 ],[14.44 14.44 18.44 18.44 14.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([13.1 18.88 22.88 17.1 13.1 ],[10.44 10.44 14.44 14.44 10.44 ],[1 1 1 ]);\npatch("
-		  "[17.1 30.88 26.88 22.88 18.88 13.1 17.1 ],[6.44 6.44 10.44 6.44 10.44 10.44 6.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',"
-		  "1,'[a:b]');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Slice1"
-		  SID			  "16:15"
-		  Ports			  [1, 1]
-		  Position		  [100, 86, 145, 114]
-		  ZOrder		  -6
-		  SourceBlock		  "xbsIndex_r4/Slice"
-		  SourceType		  "Xilinx Bit Slice Extractor Block"
-		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
-		  " is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<P><P>Hardwar"
-		  "e notes: In hardware this block costs nothing."
-		  nbits			  "11"
-		  boolean_output	  off
-		  mode			  "Lower Bit Location + Width"
-		  bit1			  "0"
-		  base1			  "MSB of Input"
-		  bit0			  "0"
-		  base0			  "LSB of Input"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,460,407"
-		  block_type		  "slice"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "45,28,1,1,white,blue,0,1fd851a7,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 28 28 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 45 45 0 0 ],[0 0 28 28 0 ]);\npatch([13.1 18.88 22.88 26.88 30.88 22.88 17.1 13.1 ],[18.44 18.44 22"
-		  ".44 18.44 22.44 22.44 22.44 18.44 ],[1 1 1 ]);\npatch([17.1 22.88 18.88 13.1 17.1 ],[14.44 14.44 18.44 18.44 14.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([13.1 18.88 22.88 17.1 13.1 ],[10.44 10.44 14.44 14.44 10.44 ],[1 1 1 ]);\npatch("
-		  "[17.1 30.88 26.88 22.88 18.88 13.1 17.1 ],[6.44 6.44 10.44 6.44 10.44 10.44 6.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',"
-		  "1,'[a:b]');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Out1"
-		  SID			  "16:16"
-		  Position		  [420, 53, 450, 67]
-		  ZOrder		  -7
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  SrcBlock		  "In1"
-		  SrcPort		  1
-		  Points		  [0, 0; 15, 0]
-		  Branch {
-		    Points		    [0, 55]
-		    DstBlock		    "Slice1"
-		    DstPort		    1
-		  }
-		  Branch {
-		    DstBlock		    "Slice"
-		    DstPort		    1
-		  }
-		}
-		Line {
-		  SrcBlock		  "Slice"
-		  SrcPort		  1
-		  DstBlock		  "Inverter"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Inverter"
-		  SrcPort		  1
-		  DstBlock		  "Concat"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Slice1"
-		  SrcPort		  1
-		  Points		  [100, 0]
-		  DstBlock		  "Concat"
-		  DstPort		  2
-		}
-		Line {
-		  SrcBlock		  "Concat"
-		  SrcPort		  1
-		  DstBlock		  "Reinterpret"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Reinterpret"
-		  SrcPort		  1
-		  DstBlock		  "Out1"
-		  DstPort		  1
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "conv2"
-	      SID		      "16:17"
-	      Ports		      [1, 1]
-	      Position		      [395, 245, 475, 275]
-	      ZOrder		      -3
-	      MinAlgLoopOccurrences   off
-	      PropExecContextOutsideSubsystem off
-	      RTWSystemCode	      "Auto"
-	      FunctionWithSeparateData off
-	      Opaque		      off
-	      RequestExecContextInheritance off
-	      MaskHideContents	      off
-	      Object {
-		$PropName		"MaskObject"
-		$ObjectID		45
-		$ClassName		"Simulink.Mask"
-		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
-		"e arbitrary \nwidth inputs."
-	      }
-	      System {
-		Name			"conv2"
-		Location		[47, 45, 762, 1358]
-		Open			off
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"usletter"
-		PaperUnits		"inches"
-		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-		Block {
-		  BlockType		  Inport
-		  Name			  "In1"
-		  SID			  "16:18"
-		  Position		  [25, 38, 55, 52]
-		  ZOrder		  -1
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Concat"
-		  SID			  "16:19"
-		  Ports			  [2, 1]
-		  Position		  [265, 32, 315, 83]
-		  ZOrder		  -2
-		  SourceBlock		  "xbsIndex_r4/Concat"
-		  SourceType		  "Xilinx Bus Concatenator Block"
-		  infoedit		  "Concatenates two or more inputs.  Output will be cast to an unsigned value with the binary point at z"
-		  "ero."
-		  num_inputs		  "2"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,336,162"
-		  block_type		  "concat"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "50,51,2,1,white,blue,0,16398980,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 51 51 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 50 50 0 0 ],[0 0 51 51 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[32.77 32.7"
-		  "7 39.77 32.77 39.77 39.77 39.77 32.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[25.77 25.77 32.77 32"
-		  ".77 25.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[18.77 18.77 25.77 25.77 18.77 ],[1 1 "
-		  "1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[11.77 11.77 18.77 11.77 18.77 18.77 11.77 ],[0.931 0."
-		  "946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-		  "port_label('input',1,'hi');\ncolor('black');port_label('input',2,'lo');\n\ncolor('black');disp('\\fontsize{20}\\}'"
-		  ",'texmode','on');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Inverter"
-		  SID			  "16:20"
-		  Ports			  [1, 1]
-		  Position		  [175, 28, 225, 62]
-		  ZOrder		  -3
-		  SourceBlock		  "xbsIndex_r4/Inverter"
-		  SourceType		  "Xilinx Inverter Block"
-		  infoedit		  "Bitwise logical negation (one's complement) operator."
-		  en			  off
-		  latency		  "0"
-		  dbl_ovrd		  off
-		  xl_use_area		  off
-		  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
-		  has_advanced_control	  "0"
-		  sggui_pos		  "-1,-1,-1,-1"
-		  block_type		  "inv"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "50,34,1,1,white,blue,0,267846e5,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 34 34 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 50 50 0 0 ],[0 0 34 34 0 ]);\npatch([16.1 21.88 25.88 29.88 33.88 25.88 20.1 16.1 ],[21.44 21.44 25"
-		  ".44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([20.1 25.88 21.88 16.1 20.1 ],[17.44 17.44 21.44 21.44 17.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([16.1 21.88 25.88 20.1 16.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\npatch("
-		  "[20.1 33.88 29.88 25.88 21.88 16.1 20.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('not');\nfpri"
-		  "ntf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Reinterpret"
-		  SID			  "16:21"
-		  Ports			  [1, 1]
-		  Position		  [355, 44, 395, 76]
-		  ZOrder		  -4
-		  SourceBlock		  "xbsIndex_r4/Reinterpret"
-		  SourceType		  "Xilinx Type Reinterpreter Block"
-		  infoedit		  "Changes signal type without altering the binary representation.   You can changed the signal between "
-		  "signed and unsigned, and relocate the binary point.<P><P>Hardware notes: In hardware this block costs nothing.<P><"
-		  "P>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is forced to unsigned"
-		  " with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an output of 56 (111000"
-		  " in binary)."
-		  force_arith_type	  on
-		  arith_type		  "Signed  (2's comp)"
-		  force_bin_pt		  on
-		  bin_pt		  "11"
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,356,312"
-		  block_type		  "reinterpret"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "40,32,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 40 40 0 0 ],[0 0 32 32 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 40 40 0 0 ],[0 0 32 32 0 ]);\npatch([11.1 16.88 20.88 24.88 28.88 20.88 15.1 11.1 ],[20.44 20.44 24"
-		  ".44 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([15.1 20.88 16.88 11.1 15.1 ],[16.44 16.44 20.44 20.44 16.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([11.1 16.88 20.88 15.1 11.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1 1 1 ]);\npatch("
-		  "[15.1 28.88 24.88 20.88 16.88 11.1 15.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('reinterpret'"
-		  ");\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Slice"
-		  SID			  "16:22"
-		  Ports			  [1, 1]
-		  Position		  [100, 31, 145, 59]
-		  ZOrder		  -5
-		  SourceBlock		  "xbsIndex_r4/Slice"
-		  SourceType		  "Xilinx Bit Slice Extractor Block"
-		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
-		  " is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<P><P>Hardwar"
-		  "e notes: In hardware this block costs nothing."
-		  nbits			  "1"
-		  boolean_output	  off
-		  mode			  "Upper Bit Location + Width"
-		  bit1			  "0"
-		  base1			  "MSB of Input"
-		  bit0			  "0"
-		  base0			  "LSB of Input"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,460,407"
-		  block_type		  "slice"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "45,28,1,1,white,blue,0,1fd851a7,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 28 28 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 45 45 0 0 ],[0 0 28 28 0 ]);\npatch([13.1 18.88 22.88 26.88 30.88 22.88 17.1 13.1 ],[18.44 18.44 22"
-		  ".44 18.44 22.44 22.44 22.44 18.44 ],[1 1 1 ]);\npatch([17.1 22.88 18.88 13.1 17.1 ],[14.44 14.44 18.44 18.44 14.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([13.1 18.88 22.88 17.1 13.1 ],[10.44 10.44 14.44 14.44 10.44 ],[1 1 1 ]);\npatch("
-		  "[17.1 30.88 26.88 22.88 18.88 13.1 17.1 ],[6.44 6.44 10.44 6.44 10.44 10.44 6.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',"
-		  "1,'[a:b]');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Slice1"
-		  SID			  "16:23"
-		  Ports			  [1, 1]
-		  Position		  [100, 86, 145, 114]
-		  ZOrder		  -6
-		  SourceBlock		  "xbsIndex_r4/Slice"
-		  SourceType		  "Xilinx Bit Slice Extractor Block"
-		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
-		  " is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<P><P>Hardwar"
-		  "e notes: In hardware this block costs nothing."
-		  nbits			  "11"
-		  boolean_output	  off
-		  mode			  "Lower Bit Location + Width"
-		  bit1			  "0"
-		  base1			  "MSB of Input"
-		  bit0			  "0"
-		  base0			  "LSB of Input"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,460,407"
-		  block_type		  "slice"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "45,28,1,1,white,blue,0,1fd851a7,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 28 28 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 45 45 0 0 ],[0 0 28 28 0 ]);\npatch([13.1 18.88 22.88 26.88 30.88 22.88 17.1 13.1 ],[18.44 18.44 22"
-		  ".44 18.44 22.44 22.44 22.44 18.44 ],[1 1 1 ]);\npatch([17.1 22.88 18.88 13.1 17.1 ],[14.44 14.44 18.44 18.44 14.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([13.1 18.88 22.88 17.1 13.1 ],[10.44 10.44 14.44 14.44 10.44 ],[1 1 1 ]);\npatch("
-		  "[17.1 30.88 26.88 22.88 18.88 13.1 17.1 ],[6.44 6.44 10.44 6.44 10.44 10.44 6.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',"
-		  "1,'[a:b]');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Out1"
-		  SID			  "16:24"
-		  Position		  [420, 53, 450, 67]
-		  ZOrder		  -7
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  SrcBlock		  "In1"
-		  SrcPort		  1
-		  Points		  [0, 0; 15, 0]
-		  Branch {
-		    Points		    [0, 55]
-		    DstBlock		    "Slice1"
-		    DstPort		    1
-		  }
-		  Branch {
-		    DstBlock		    "Slice"
-		    DstPort		    1
-		  }
-		}
-		Line {
-		  SrcBlock		  "Slice"
-		  SrcPort		  1
-		  DstBlock		  "Inverter"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Inverter"
-		  SrcPort		  1
-		  DstBlock		  "Concat"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Slice1"
-		  SrcPort		  1
-		  Points		  [100, 0]
-		  DstBlock		  "Concat"
-		  DstPort		  2
-		}
-		Line {
-		  SrcBlock		  "Concat"
-		  SrcPort		  1
-		  DstBlock		  "Reinterpret"
-		  DstPort		  1
-		}
-		Line {
-		  SrcBlock		  "Reinterpret"
-		  SrcPort		  1
-		  DstBlock		  "Out1"
-		  DstPort		  1
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "conv3"
-	      SID		      "16:25"
-	      Ports		      [1, 1]
-	      Position		      [395, 345, 475, 375]
-	      ZOrder		      -4
-	      MinAlgLoopOccurrences   off
-	      PropExecContextOutsideSubsystem off
-	      RTWSystemCode	      "Auto"
-	      FunctionWithSeparateData off
-	      Opaque		      off
-	      RequestExecContextInheritance off
-	      MaskHideContents	      off
-	      Object {
-		$PropName		"MaskObject"
-		$ObjectID		46
-		$ClassName		"Simulink.Mask"
-		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
-		"e arbitrary \nwidth inputs."
-	      }
-	      System {
-		Name			"conv3"
-		Location		[47, 45, 762, 1358]
-		Open			off
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"usletter"
-		PaperUnits		"inches"
-		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-		Block {
-		  BlockType		  Inport
-		  Name			  "In1"
-		  SID			  "16:26"
-		  Position		  [25, 38, 55, 52]
-		  ZOrder		  -1
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Concat"
-		  SID			  "16:27"
-		  Ports			  [2, 1]
-		  Position		  [265, 32, 315, 83]
-		  ZOrder		  -2
-		  SourceBlock		  "xbsIndex_r4/Concat"
-		  SourceType		  "Xilinx Bus Concatenator Block"
-		  infoedit		  "Concatenates two or more inputs.  Output will be cast to an unsigned value with the binary point at z"
-		  "ero."
-		  num_inputs		  "2"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,336,162"
-		  block_type		  "concat"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "50,51,2,1,white,blue,0,16398980,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 51 51 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 50 50 0 0 ],[0 0 51 51 0 ]);\npatch([9.425 19.54 26.54 33.54 40.54 26.54 16.425 9.425 ],[32.77 32.7"
-		  "7 39.77 32.77 39.77 39.77 39.77 32.77 ],[1 1 1 ]);\npatch([16.425 26.54 19.54 9.425 16.425 ],[25.77 25.77 32.77 32"
-		  ".77 25.77 ],[0.931 0.946 0.973 ]);\npatch([9.425 19.54 26.54 16.425 9.425 ],[18.77 18.77 25.77 25.77 18.77 ],[1 1 "
-		  "1 ]);\npatch([16.425 40.54 33.54 26.54 19.54 9.425 16.425 ],[11.77 11.77 18.77 11.77 18.77 18.77 11.77 ],[0.931 0."
-		  "946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-		  "port_label('input',1,'hi');\ncolor('black');port_label('input',2,'lo');\n\ncolor('black');disp('\\fontsize{20}\\}'"
-		  ",'texmode','on');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Inverter"
-		  SID			  "16:28"
-		  Ports			  [1, 1]
-		  Position		  [175, 28, 225, 62]
-		  ZOrder		  -3
-		  SourceBlock		  "xbsIndex_r4/Inverter"
-		  SourceType		  "Xilinx Inverter Block"
-		  infoedit		  "Bitwise logical negation (one's complement) operator."
-		  en			  off
-		  latency		  "0"
-		  dbl_ovrd		  off
-		  xl_use_area		  off
-		  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
-		  has_advanced_control	  "0"
-		  sggui_pos		  "-1,-1,-1,-1"
-		  block_type		  "inv"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "50,34,1,1,white,blue,0,267846e5,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 50 50 0 0 ],[0 0 34 34 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 50 50 0 0 ],[0 0 34 34 0 ]);\npatch([16.1 21.88 25.88 29.88 33.88 25.88 20.1 16.1 ],[21.44 21.44 25"
-		  ".44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([20.1 25.88 21.88 16.1 20.1 ],[17.44 17.44 21.44 21.44 17.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([16.1 21.88 25.88 20.1 16.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\npatch("
-		  "[20.1 33.88 29.88 25.88 21.88 16.1 20.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('not');\nfpri"
-		  "ntf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Reinterpret"
-		  SID			  "16:29"
-		  Ports			  [1, 1]
-		  Position		  [355, 44, 395, 76]
-		  ZOrder		  -4
-		  SourceBlock		  "xbsIndex_r4/Reinterpret"
-		  SourceType		  "Xilinx Type Reinterpreter Block"
-		  infoedit		  "Changes signal type without altering the binary representation.   You can changed the signal between "
-		  "signed and unsigned, and relocate the binary point.<P><P>Hardware notes: In hardware this block costs nothing.<P><"
-		  "P>Example:  Suppose the input is 6 bits wide, signed, with 2 fractional bits, and the output is forced to unsigned"
-		  " with 0 fractional bits.  Then an input of -2.0 (1110.00 in binary 2's complement) becomes an output of 56 (111000"
-		  " in binary)."
-		  force_arith_type	  on
-		  arith_type		  "Signed  (2's comp)"
-		  force_bin_pt		  on
-		  bin_pt		  "11"
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,356,312"
-		  block_type		  "reinterpret"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "40,32,1,1,white,blue,0,6b04d0b0,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 40 40 0 0 ],[0 0 32 32 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 40 40 0 0 ],[0 0 32 32 0 ]);\npatch([11.1 16.88 20.88 24.88 28.88 20.88 15.1 11.1 ],[20.44 20.44 24"
-		  ".44 20.44 24.44 24.44 24.44 20.44 ],[1 1 1 ]);\npatch([15.1 20.88 16.88 11.1 15.1 ],[16.44 16.44 20.44 20.44 16.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([11.1 16.88 20.88 15.1 11.1 ],[12.44 12.44 16.44 16.44 12.44 ],[1 1 1 ]);\npatch("
-		  "[15.1 28.88 24.88 20.88 16.88 11.1 15.1 ],[8.44 8.44 12.44 8.44 12.44 12.44 8.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('reinterpret'"
-		  ");\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Slice"
-		  SID			  "16:30"
-		  Ports			  [1, 1]
-		  Position		  [100, 31, 145, 59]
-		  ZOrder		  -5
-		  SourceBlock		  "xbsIndex_r4/Slice"
-		  SourceType		  "Xilinx Bit Slice Extractor Block"
-		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
-		  " is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<P><P>Hardwar"
-		  "e notes: In hardware this block costs nothing."
-		  nbits			  "1"
-		  boolean_output	  off
-		  mode			  "Upper Bit Location + Width"
-		  bit1			  "0"
-		  base1			  "MSB of Input"
-		  bit0			  "0"
-		  base0			  "LSB of Input"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,460,407"
-		  block_type		  "slice"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "45,28,1,1,white,blue,0,1fd851a7,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 28 28 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 45 45 0 0 ],[0 0 28 28 0 ]);\npatch([13.1 18.88 22.88 26.88 30.88 22.88 17.1 13.1 ],[18.44 18.44 22"
-		  ".44 18.44 22.44 22.44 22.44 18.44 ],[1 1 1 ]);\npatch([17.1 22.88 18.88 13.1 17.1 ],[14.44 14.44 18.44 18.44 14.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([13.1 18.88 22.88 17.1 13.1 ],[10.44 10.44 14.44 14.44 10.44 ],[1 1 1 ]);\npatch("
-		  "[17.1 30.88 26.88 22.88 18.88 13.1 17.1 ],[6.44 6.44 10.44 6.44 10.44 10.44 6.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',"
-		  "1,'[a:b]');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Slice1"
-		  SID			  "16:31"
-		  Ports			  [1, 1]
-		  Position		  [100, 86, 145, 114]
-		  ZOrder		  -6
-		  SourceBlock		  "xbsIndex_r4/Slice"
-		  SourceType		  "Xilinx Bit Slice Extractor Block"
-		  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type"
-		  " is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<P><P>Hardwar"
-		  "e notes: In hardware this block costs nothing."
-		  nbits			  "11"
-		  boolean_output	  off
-		  mode			  "Lower Bit Location + Width"
-		  bit1			  "0"
-		  base1			  "MSB of Input"
-		  bit0			  "0"
-		  base0			  "LSB of Input"
-		  dbl_ovrd		  off
-		  has_advanced_control	  "0"
-		  sggui_pos		  "20,20,460,407"
-		  block_type		  "slice"
-		  block_version		  "8.2.02"
-		  sg_icon_stat		  "45,28,1,1,white,blue,0,1fd851a7,right,,[ ],[ ]"
-		  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 45 45 0 0 ],[0 0 28 28 0 ],[0.77 0.82 0.9"
-		  "1 ]);\nplot([0 45 45 0 0 ],[0 0 28 28 0 ]);\npatch([13.1 18.88 22.88 26.88 30.88 22.88 17.1 13.1 ],[18.44 18.44 22"
-		  ".44 18.44 22.44 22.44 22.44 18.44 ],[1 1 1 ]);\npatch([17.1 22.88 18.88 13.1 17.1 ],[14.44 14.44 18.44 18.44 14.44"
-		  " ],[0.931 0.946 0.973 ]);\npatch([13.1 18.88 22.88 17.1 13.1 ],[10.44 10.44 14.44 14.44 10.44 ],[1 1 1 ]);\npatch("
-		  "[17.1 30.88 26.88 22.88 18.88 13.1 17.1 ],[6.44 6.44 10.44 6.44 10.44 10.44 6.44 ],[0.931 0.946 0.973 ]);\nfprintf"
-		  "('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\ncolor('black');port_label('output',"
-		  "1,'[a:b]');\nfprintf('','COMMENT: end icon text');"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Out1"
-		  SID			  "16:32"
+		  SID			  "16:143"
 		  Position		  [420, 53, 450, 67]
 		  ZOrder		  -7
 		  IconDisplay		  "Port number"
@@ -7730,15 +7336,50 @@ Library {
 	    }
 	    Block {
 	      BlockType		      Reference
+	      Name		      "conv1"
+	      SID		      "16:144"
+	      Ports		      [1, 1]
+	      Position		      [1010, 255, 1090, 285]
+	      ZOrder		      6246
+	      LibraryVersion	      "1.526"
+	      SourceBlock	      "xps_library/ADCs/adc_mkid/conv0"
+	      SourceType	      ""
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "conv2"
+	      SID		      "16:145"
+	      Ports		      [1, 1]
+	      Position		      [1010, 365, 1090, 395]
+	      ZOrder		      6247
+	      LibraryVersion	      "1.526"
+	      SourceBlock	      "xps_library/ADCs/adc_mkid/conv0"
+	      SourceType	      ""
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "conv3"
+	      SID		      "16:146"
+	      Ports		      [1, 1]
+	      Position		      [1010, 465, 1090, 495]
+	      ZOrder		      6248
+	      LibraryVersion	      "1.526"
+	      SourceBlock	      "xps_library/ADCs/adc_mkid/conv0"
+	      SourceType	      ""
+	    }
+	    Block {
+	      BlockType		      Reference
 	      Name		      "xps_library_ADCs_adc_mkid_user_data_i0"
 	      SID		      "16:33"
 	      Ports		      [1, 1]
-	      Position		      [205, 39, 260, 61]
+	      Position		      [795, 159, 850, 181]
 	      ZOrder		      -5
+	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway In"
 	      SourceType	      "Xilinx Gateway In Block"
-	      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx"
-	      " fixed point type.<P><P>Hardware notes:  In hardware these blocks become top level input ports."
+	      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, single, double and fixed-point to"
+	      "  Xilinx fixed-point or floating-point data type.<br><br>Hardware notes:  In hardware these blocks become top l"
+	      "evel input ports."
 	      gui_display_data_type   "Fixed-point"
 	      arith_type	      "Unsigned"
 	      n_bits		      "12"
@@ -7753,11 +7394,14 @@ Library {
 	      timing_constraint	      "None"
 	      locs_specified	      off
 	      LOCs		      "{}"
+	      UseAsADC		      off
+	      ADCChannel	      "'1'"
 	      xl_use_area	      off
 	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      inherit_from_input      off
 	      hdl_port		      "on"
 	      has_advanced_control    "0"
-	      sggui_pos		      "20,20,348,408"
+	      sggui_pos		      "37,14,416,656"
 	      block_type	      "gatewayin"
 	      block_version	      "10.1.3"
 	      sg_icon_stat	      "55,22,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
@@ -7775,8 +7419,9 @@ Library {
 	      Name		      "xps_library_ADCs_adc_mkid_user_data_i1"
 	      SID		      "16:34"
 	      Ports		      [1, 1]
-	      Position		      [205, 139, 260, 161]
+	      Position		      [795, 259, 850, 281]
 	      ZOrder		      -6
+	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway In"
 	      SourceType	      "Xilinx Gateway In Block"
 	      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx"
@@ -7795,11 +7440,14 @@ Library {
 	      timing_constraint	      "None"
 	      locs_specified	      off
 	      LOCs		      "{}"
+	      UseAsADC		      off
+	      ADCChannel	      "'1'"
 	      xl_use_area	      off
 	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      inherit_from_input      off
 	      hdl_port		      "on"
 	      has_advanced_control    "0"
-	      sggui_pos		      "20,20,348,406"
+	      sggui_pos		      "37,14,416,656"
 	      block_type	      "gatewayin"
 	      block_version	      "10.1.3"
 	      sg_icon_stat	      "55,22,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
@@ -7815,10 +7463,11 @@ Library {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "xps_library_ADCs_adc_mkid_user_data_q0"
-	      SID		      "16:35"
+	      SID		      "16:111"
 	      Ports		      [1, 1]
-	      Position		      [205, 249, 260, 271]
-	      ZOrder		      -7
+	      Position		      [795, 369, 850, 391]
+	      ZOrder		      6217
+	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway In"
 	      SourceType	      "Xilinx Gateway In Block"
 	      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx"
@@ -7837,11 +7486,14 @@ Library {
 	      timing_constraint	      "None"
 	      locs_specified	      off
 	      LOCs		      "{}"
+	      UseAsADC		      off
+	      ADCChannel	      "'1'"
 	      xl_use_area	      off
 	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      inherit_from_input      off
 	      hdl_port		      "on"
 	      has_advanced_control    "0"
-	      sggui_pos		      "20,20,348,406"
+	      sggui_pos		      "37,14,416,656"
 	      block_type	      "gatewayin"
 	      block_version	      "10.1.3"
 	      sg_icon_stat	      "55,22,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
@@ -7859,8 +7511,9 @@ Library {
 	      Name		      "xps_library_ADCs_adc_mkid_user_data_q1"
 	      SID		      "16:36"
 	      Ports		      [1, 1]
-	      Position		      [205, 349, 260, 371]
+	      Position		      [795, 469, 850, 491]
 	      ZOrder		      -8
+	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway In"
 	      SourceType	      "Xilinx Gateway In Block"
 	      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx"
@@ -7879,11 +7532,14 @@ Library {
 	      timing_constraint	      "None"
 	      locs_specified	      off
 	      LOCs		      "{}"
+	      UseAsADC		      off
+	      ADCChannel	      "'1'"
 	      xl_use_area	      off
 	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      inherit_from_input      off
 	      hdl_port		      "on"
 	      has_advanced_control    "0"
-	      sggui_pos		      "20,20,348,406"
+	      sggui_pos		      "37,14,416,656"
 	      block_type	      "gatewayin"
 	      block_version	      "10.1.3"
 	      sg_icon_stat	      "55,22,1,1,white,yellow,1,00d3666e,right,,[ ],[ ]"
@@ -7901,8 +7557,9 @@ Library {
 	      Name		      "xps_library_ADCs_adc_mkid_user_sync"
 	      SID		      "16:37"
 	      Ports		      [1, 1]
-	      Position		      [210, 439, 265, 461]
+	      Position		      [800, 559, 855, 581]
 	      ZOrder		      -9
+	      LibraryVersion	      "1.2"
 	      SourceBlock	      "xbsIndex_r4/Gateway In"
 	      SourceType	      "Xilinx Gateway In Block"
 	      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx"
@@ -7921,8 +7578,11 @@ Library {
 	      timing_constraint	      "None"
 	      locs_specified	      off
 	      LOCs		      "{}"
+	      UseAsADC		      off
+	      ADCChannel	      "'1'"
 	      xl_use_area	      off
 	      xl_area		      "[0, 0, 0, 0, 0, 0, 0]"
+	      inherit_from_input      off
 	      hdl_port		      "on"
 	      has_advanced_control    "0"
 	      sggui_pos		      "20,20,348,408"
@@ -7942,7 +7602,7 @@ Library {
 	      BlockType		      Outport
 	      Name		      "data_i0"
 	      SID		      "16:38"
-	      Position		      [640, 43, 670, 57]
+	      Position		      [1285, 153, 1315, 167]
 	      ZOrder		      -10
 	      IconDisplay	      "Port number"
 	    }
@@ -7950,7 +7610,7 @@ Library {
 	      BlockType		      Outport
 	      Name		      "data_i1"
 	      SID		      "16:39"
-	      Position		      [640, 143, 670, 157]
+	      Position		      [1285, 253, 1315, 267]
 	      ZOrder		      -11
 	      Port		      "2"
 	      IconDisplay	      "Port number"
@@ -7959,7 +7619,7 @@ Library {
 	      BlockType		      Outport
 	      Name		      "data_q0"
 	      SID		      "16:40"
-	      Position		      [640, 253, 670, 267]
+	      Position		      [1285, 363, 1315, 377]
 	      ZOrder		      -12
 	      Port		      "3"
 	      IconDisplay	      "Port number"
@@ -7968,72 +7628,198 @@ Library {
 	      BlockType		      Outport
 	      Name		      "data_q1"
 	      SID		      "16:41"
-	      Position		      [645, 353, 675, 367]
+	      Position		      [1290, 463, 1320, 477]
 	      ZOrder		      -13
 	      Port		      "4"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "sync"
+	      Name		      "1pps"
 	      SID		      "16:42"
-	      Position		      [645, 443, 675, 457]
+	      Position		      [1290, 563, 1320, 577]
 	      ZOrder		      -14
 	      Port		      "5"
 	      IconDisplay	      "Port number"
 	    }
 	    Line {
-	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_sync"
-	      SrcPort		      1
-	      DstBlock		      "sync"
-	      DstPort		      1
-	    }
-	    Line {
-	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_i0"
-	      SrcPort		      1
-	      DstBlock		      "conv"
-	      DstPort		      1
-	    }
-	    Line {
-	      SrcBlock		      "conv"
-	      SrcPort		      1
-	      DstBlock		      "data_i0"
-	      DstPort		      1
-	    }
-	    Line {
-	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_q0"
-	      SrcPort		      1
-	      DstBlock		      "conv2"
-	      DstPort		      1
-	    }
-	    Line {
-	      SrcBlock		      "conv2"
-	      SrcPort		      1
-	      DstBlock		      "data_q0"
-	      DstPort		      1
-	    }
-	    Line {
-	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_i1"
-	      SrcPort		      1
-	      DstBlock		      "conv1"
-	      DstPort		      1
-	    }
-	    Line {
-	      SrcBlock		      "conv1"
+	      SrcBlock		      "Simulation Multiplexer1"
 	      SrcPort		      1
 	      DstBlock		      "data_i1"
 	      DstPort		      1
 	    }
 	    Line {
-	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_q1"
+	      SrcBlock		      "Simulation Multiplexer2"
 	      SrcPort		      1
-	      DstBlock		      "conv3"
+	      DstBlock		      "data_q0"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Simulation Multiplexer3"
+	      SrcPort		      1
+	      DstBlock		      "data_q1"
 	      DstPort		      1
 	    }
 	    Line {
 	      SrcBlock		      "conv3"
 	      SrcPort		      1
-	      DstBlock		      "data_q1"
+	      DstBlock		      "Simulation Multiplexer3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Reinterpret3"
+	      SrcPort		      1
+	      Points		      [37, 0; 0, 25]
+	      DstBlock		      "Simulation Multiplexer3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "conv2"
+	      SrcPort		      1
+	      DstBlock		      "Simulation Multiplexer2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Reinterpret2"
+	      SrcPort		      1
+	      Points		      [37, 0; 0, 25]
+	      DstBlock		      "Simulation Multiplexer2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Reinterpret1"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, 20]
+	      DstBlock		      "Simulation Multiplexer1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "conv1"
+	      SrcPort		      1
+	      DstBlock		      "Simulation Multiplexer1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Simulation Multiplexer"
+	      SrcPort		      1
+	      DstBlock		      "data_i0"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Reinterpret"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, 30]
+	      DstBlock		      "Simulation Multiplexer"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "conv0"
+	      SrcPort		      1
+	      DstBlock		      "Simulation Multiplexer"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "From Workspace3"
+	      SrcPort		      1
+	      DstBlock		      "xps_library_ADCs_adc_mkid_user_data_q1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "From Workspace2"
+	      SrcPort		      1
+	      DstBlock		      "xps_library_ADCs_adc_mkid_user_data_i1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Data Type Conversion1"
+	      SrcPort		      1
+	      DstBlock		      "xps_library_ADCs_adc_mkid_user_data_q0"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Data Type Conversion"
+	      SrcPort		      1
+	      DstBlock		      "xps_library_ADCs_adc_mkid_user_data_i0"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_q1"
+	      SrcPort		      1
+	      Points		      [78, 0]
+	      Branch {
+		DstBlock		"conv3"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -50]
+		DstBlock		"Reinterpret3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_q0"
+	      SrcPort		      1
+	      Points		      [86, 0]
+	      Branch {
+		DstBlock		"conv2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -50]
+		DstBlock		"Reinterpret2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_i1"
+	      SrcPort		      1
+	      Points		      [82, 0]
+	      Branch {
+		DstBlock		"conv1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -45]
+		DstBlock		"Reinterpret1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_data_i0"
+	      SrcPort		      1
+	      Points		      [82, 0]
+	      Branch {
+		DstBlock		"conv0"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -55]
+		DstBlock		"Reinterpret"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "From Workspace1"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "From Workspace"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "xps_library_ADCs_adc_mkid_user_sync"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "xps_library_ADCs_adc_mkid_user_sync"
+	      SrcPort		      1
+	      DstBlock		      "1pps"
 	      DstPort		      1
 	    }
 	  }
@@ -8056,7 +7842,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    47
+	    $ObjectID		    44
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "MKID ADC Interface Block"
 	    Description		    "Interface block for the MKID 12-bits ADC board (2xADS54RF63)."
@@ -8066,7 +7852,7 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		48
+		$ObjectID		45
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -8081,7 +7867,7 @@ Library {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		49
+		$ObjectID		46
 		Type			"edit"
 		Name			"adc_clk_rate"
 		Prompt			"ADC Clock Rate (MHz)"
@@ -8123,7 +7909,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		50
+		$ObjectID		47
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -8374,7 +8160,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		51
+		$ObjectID		48
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -8625,7 +8411,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		52
+		$ObjectID		49
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -8876,7 +8662,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		53
+		$ObjectID		50
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -9127,7 +8913,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		54
+		$ObjectID		51
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -9378,7 +9164,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		55
+		$ObjectID		52
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -9629,7 +9415,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		56
+		$ObjectID		53
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -9880,7 +9666,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		57
+		$ObjectID		54
 		$ClassName		"Simulink.Mask"
 		Description		"Converts an (12-bit) unsigned number to 2's complement.\nThis block should eventually be able to handl"
 		"e arbitrary \nwidth inputs."
@@ -10695,7 +10481,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    58
+	    $ObjectID		    55
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "adc_sim"
 	    Description		    "This block simulates the behavior of a demuxed ADC, which takes\nas input a waveform and return"
@@ -10706,14 +10492,14 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		59
+		$ObjectID		56
 		Type			"edit"
 		Name			"nStreams"
 		Prompt			"Number of Output Streams"
 		Value			"8"
 	      }
 	      Object {
-		$ObjectID		60
+		$ObjectID		57
 		Type			"edit"
 		Name			"bit_width"
 		Prompt			"Sample Bit Width"
@@ -11169,7 +10955,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    61
+	    $ObjectID		    58
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "adc5g"
 	    Description		    "Interface for the ASIAA 5 GSps ADC. Supports interleaving all four\ncores using either input A "
@@ -11184,7 +10970,7 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      7
 	      Object {
-		$ObjectID		62
+		$ObjectID		59
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -11200,7 +10986,7 @@ Library {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		63
+		$ObjectID		60
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -11215,7 +11001,7 @@ Library {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		64
+		$ObjectID		61
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -11233,7 +11019,7 @@ Library {
 		"if(strcmp(demux, '1:2')),\n    set_param(gcb, 'adc_bit_width', '4');\nelse\nend"
 	      }
 	      Object {
-		$ObjectID		65
+		$ObjectID		62
 		Type			"edit"
 		Name			"adc_bit_width"
 		Prompt			"ADC Resolution (bits):"
@@ -11241,7 +11027,7 @@ Library {
 		Enabled			"off"
 	      }
 	      Object {
-		$ObjectID		66
+		$ObjectID		63
 		Type			"edit"
 		Name			"adc_clk_rate"
 		Prompt			"ADC Clock Rate (MHz):"
@@ -11249,7 +11035,7 @@ Library {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		67
+		$ObjectID		64
 		Type			"checkbox"
 		Name			"using_ctrl"
 		Prompt			"use control"
@@ -11257,7 +11043,7 @@ Library {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		68
+		$ObjectID		65
 		Type			"checkbox"
 		Name			"test_ramp"
 		Prompt			"start in test ramp mode"
@@ -13044,7 +12830,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    69
+	    $ObjectID		    66
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Converts an (8-bit) unsigned number to 2's complement.\nThis block should eventually be able to"
 	    " handle arbitrary \nwidth inputs."
@@ -13052,7 +12838,7 @@ Library {
 	    "t'], 'bin_pt', num2str(bit_width-1));\n"
 	    Object {
 	      $PropName		      "Parameters"
-	      $ObjectID		      70
+	      $ObjectID		      67
 	      $ClassName	      "Simulink.MaskParameter"
 	      Type		      "edit"
 	      Name		      "bit_width"
@@ -13306,7 +13092,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    71
+	    $ObjectID		    68
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "of"
 	    Description		    "1-cycle overflow detector for an n-bit ADC outputs (simulation only)"
@@ -13314,14 +13100,14 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		72
+		$ObjectID		69
 		Type			"edit"
 		Name			"bit_num"
 		Prompt			"Bit index of overflow detection bus:"
 		Value			"0"
 	      }
 	      Object {
-		$ObjectID		73
+		$ObjectID		70
 		Type			"edit"
 		Name			"n_adc_bits"
 		Prompt			"Number of bits in ADC"
@@ -13538,7 +13324,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    74
+	    $ObjectID		    71
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "of_detect_bus"
 	    Initialization	    "of_detect_bus_init(gcb, ...\n    'nStreams', nStreams, ...\n    'bit_width', bit_width);"
@@ -13547,14 +13333,14 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		75
+		$ObjectID		72
 		Type			"edit"
 		Name			"nStreams"
 		Prompt			"Number of Streams"
 		Value			"8"
 	      }
 	      Object {
-		$ObjectID		76
+		$ObjectID		73
 		Type			"edit"
 		Name			"bit_width"
 		Prompt			"Bit Width"
@@ -13816,7 +13602,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    77
+	    $ObjectID		    74
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "x64_adc"
 	    Description		    "The ADC block converts analog inputs to digital outputs. Every clock cycle, the inputs are samp"
@@ -13829,21 +13615,21 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      3
 	      Object {
-		$ObjectID		78
+		$ObjectID		75
 		Type			"edit"
 		Name			"adc_clk_rate"
 		Prompt			"ADC clock rate (MHz)"
 		Value			"12"
 	      }
 	      Object {
-		$ObjectID		79
+		$ObjectID		76
 		Type			"checkbox"
 		Name			"spi"
 		Prompt			"Include SPI interface?"
 		Value			"off"
 	      }
 	      Object {
-		$ObjectID		80
+		$ObjectID		77
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -15339,7 +15125,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    81
+	    $ObjectID		    78
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "MKID DAC Interface Block"
 	    Description		    "Interface block for the MKID 16-bits DAC board (2xDAC5681)"
@@ -15349,7 +15135,7 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      3
 	      Object {
-		$ObjectID		82
+		$ObjectID		79
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -15364,14 +15150,14 @@ Library {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		83
+		$ObjectID		80
 		Type			"edit"
 		Name			"dac_clk_rate"
 		Prompt			"DAC external clock rate (MHz)"
 		Value			"512"
 	      }
 	      Object {
-		$ObjectID		84
+		$ObjectID		81
 		Type			"edit"
 		Name			"sample_period"
 		Prompt			"Sample period "
@@ -16069,7 +15855,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    85
+		    $ObjectID		    82
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "parallel_to_serial_converter"
 		    Description		    "This block takes as input a parallel bus of specified width. \nWhen the load signal 'ld' is as"
@@ -16085,14 +15871,14 @@ Library {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    86
+		    $ObjectID		    83
 		    Type		    "edit"
 		    Name		    "pin_width"
 		    Prompt		    "Parallel Input Width"
 		    Value		    "17"
 		    }
 		    Object {
-		    $ObjectID		    87
+		    $ObjectID		    84
 		    Type		    "edit"
 		    Name		    "sout_width"
 		    Prompt		    "Serial Output Width"
@@ -17009,7 +16795,6 @@ Library {
 		    Annotation {
 		    SID			    "110:52"
 		    Position		    [747, 444]
-		    ZOrder		    -1
 		    }
 		  }
 		}
@@ -17031,7 +16816,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    88
+		    $ObjectID		    85
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "parallel_to_serial_converter"
 		    Description		    "This block takes as input a parallel bus of specified width. \nWhen the load signal 'ld' is as"
@@ -17047,14 +16832,14 @@ Library {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    89
+		    $ObjectID		    86
 		    Type		    "edit"
 		    Name		    "pin_width"
 		    Prompt		    "Parallel Input Width"
 		    Value		    "17"
 		    }
 		    Object {
-		    $ObjectID		    90
+		    $ObjectID		    87
 		    Type		    "edit"
 		    Name		    "sout_width"
 		    Prompt		    "Serial Output Width"
@@ -17985,7 +17770,6 @@ Library {
 		    Annotation {
 		    SID			    "110:77"
 		    Position		    [747, 444]
-		    ZOrder		    -1
 		    }
 		  }
 		}
@@ -18006,7 +17790,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    91
+		    $ObjectID		    88
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "posedge"
 		    Description		    "Outputs true if a boolean input signal is true this clock and was false last clock."
@@ -18189,7 +17973,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    92
+		    $ObjectID		    89
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "posedge"
 		    Description		    "Outputs true if a boolean input signal is true this clock and was false last clock."
@@ -18372,7 +18156,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    93
+		    $ObjectID		    90
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "posedge"
 		    Description		    "Outputs true if a boolean input signal is true this clock and was false last clock."
@@ -19509,7 +19293,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    94
+	    $ObjectID		    91
 	    $ClassName		    "Simulink.Mask"
 	    Initialization	    "dac_mkid_4x_mask;"
 	    SelfModifiable	    "on"
@@ -19517,7 +19301,7 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      3
 	      Object {
-		$ObjectID		95
+		$ObjectID		92
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -19532,14 +19316,14 @@ Library {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		96
+		$ObjectID		93
 		Type			"edit"
 		Name			"dac_clk_rate"
 		Prompt			"DAC external clock rate (MHz)"
 		Value			"540"
 	      }
 	      Object {
-		$ObjectID		97
+		$ObjectID		94
 		Type			"edit"
 		Name			"sample_period"
 		Prompt			"Sample period "
@@ -20429,7 +20213,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    98
+		    $ObjectID		    95
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "parallel_to_serial_converter"
 		    Description		    "This block takes as input a parallel bus of specified width. \nWhen the load signal 'ld' is as"
@@ -20445,14 +20229,14 @@ Library {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    99
+		    $ObjectID		    96
 		    Type		    "edit"
 		    Name		    "pin_width"
 		    Prompt		    "Parallel Input Width"
 		    Value		    "17"
 		    }
 		    Object {
-		    $ObjectID		    100
+		    $ObjectID		    97
 		    Type		    "edit"
 		    Name		    "sout_width"
 		    Prompt		    "Serial Output Width"
@@ -21383,7 +21167,6 @@ Library {
 		    Annotation {
 		    SID			    "111:60"
 		    Position		    [747, 444]
-		    ZOrder		    -1
 		    }
 		  }
 		}
@@ -21405,7 +21188,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    101
+		    $ObjectID		    98
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "parallel_to_serial_converter"
 		    Description		    "This block takes as input a parallel bus of specified width. \nWhen the load signal 'ld' is as"
@@ -21421,14 +21204,14 @@ Library {
 		    Type		    "Simulink.MaskParameter"
 		    Dimension		    2
 		    Object {
-		    $ObjectID		    102
+		    $ObjectID		    99
 		    Type		    "edit"
 		    Name		    "pin_width"
 		    Prompt		    "Parallel Input Width"
 		    Value		    "17"
 		    }
 		    Object {
-		    $ObjectID		    103
+		    $ObjectID		    100
 		    Type		    "edit"
 		    Name		    "sout_width"
 		    Prompt		    "Serial Output Width"
@@ -22359,7 +22142,6 @@ Library {
 		    Annotation {
 		    SID			    "111:85"
 		    Position		    [747, 444]
-		    ZOrder		    -1
 		    }
 		  }
 		}
@@ -22380,7 +22162,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    104
+		    $ObjectID		    101
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "posedge"
 		    Description		    "Outputs true if a boolean input signal is true this clock and was false last clock."
@@ -22563,7 +22345,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    105
+		    $ObjectID		    102
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "posedge"
 		    Description		    "Outputs true if a boolean input signal is true this clock and was false last clock."
@@ -22746,7 +22528,7 @@ Library {
 		  MaskHideContents	  off
 		  Object {
 		    $PropName		    "MaskObject"
-		    $ObjectID		    106
+		    $ObjectID		    103
 		    $ClassName		    "Simulink.Mask"
 		    Type		    "posedge"
 		    Description		    "Outputs true if a boolean input signal is true this clock and was false last clock."
@@ -24060,7 +23842,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		107
+	$ObjectID		104
 	$ClassName		"Simulink.Mask"
 	Initialization		"shared_bram_mask;"
 	SelfModifiable		"on"
@@ -24069,7 +23851,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  9
 	  Object {
-	    $ObjectID		    108
+	    $ObjectID		    105
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -24084,14 +23866,14 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    109
+	    $ObjectID		    106
 	    Type		    "edit"
 	    Name		    "addr_width"
 	    Prompt		    "Address width"
 	    Value		    "10"
 	  }
 	  Object {
-	    $ObjectID		    110
+	    $ObjectID		    107
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -24108,21 +23890,21 @@ Library {
 	    Value		    "32"
 	  }
 	  Object {
-	    $ObjectID		    111
+	    $ObjectID		    108
 	    Type		    "checkbox"
 	    Name		    "reg_prim_output"
 	    Prompt		    "Register Primitive Output"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    112
+	    $ObjectID		    109
 	    Type		    "checkbox"
 	    Name		    "reg_core_output"
 	    Prompt		    "Register Core Output"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    113
+	    $ObjectID		    110
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -24136,21 +23918,21 @@ Library {
 	    Value		    "Minimum_Area"
 	  }
 	  Object {
-	    $ObjectID		    114
+	    $ObjectID		    111
 	    Type		    "edit"
 	    Name		    "data_bin_pt"
 	    Prompt		    "Data Binary Point"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    115
+	    $ObjectID		    112
 	    Type		    "edit"
 	    Name		    "init_vals"
 	    Prompt		    "Initial values (simulation only)"
 	    Value		    "[0:2^10-1]"
 	  }
 	  Object {
-	    $ObjectID		    116
+	    $ObjectID		    113
 	    Type		    "edit"
 	    Name		    "sample_rate"
 	    Prompt		    "Sample rate"
@@ -24217,27 +23999,27 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    117
+	    $ObjectID		    114
 	    $ClassName		    "Simulink.Mask"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      3
 	      Object {
-		$ObjectID		118
+		$ObjectID		115
 		Type			"edit"
 		Name			"data_width"
 		Prompt			"data width"
 		Value			"32"
 	      }
 	      Object {
-		$ObjectID		119
+		$ObjectID		116
 		Type			"edit"
 		Name			"addr_width"
 		Prompt			"address width"
 		Value			"10"
 	      }
 	      Object {
-		$ObjectID		120
+		$ObjectID		117
 		Type			"edit"
 		Name			"sample_rate"
 		Prompt			"sample rate"
@@ -24647,13 +24429,11 @@ Library {
 	      Name		      "If reading/writing words\nsmaller than 32 bits,\nchange address so\nthat addressing is\nbig endian"
 	      " instead of\nlittle, otherwise\npass through"
 	      Position		      [235, 77]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "112:16"
 	      Name		      "Use behavioural HDL\nso that gets optimised \nto minimum logic"
 	      Position		      [232, 322]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -24867,27 +24647,27 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		121
+		$ObjectID		118
 		$ClassName		"Simulink.Mask"
 		Array {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  3
 		  Object {
-		    $ObjectID		    122
+		    $ObjectID		    119
 		    Type		    "edit"
 		    Name		    "data_width"
 		    Prompt		    "data width"
 		    Value		    "32"
 		  }
 		  Object {
-		    $ObjectID		    123
+		    $ObjectID		    120
 		    Type		    "edit"
 		    Name		    "addr_width"
 		    Prompt		    "address width"
 		    Value		    "10"
 		  }
 		  Object {
-		    $ObjectID		    124
+		    $ObjectID		    121
 		    Type		    "edit"
 		    Name		    "sample_rate"
 		    Prompt		    "sample rate"
@@ -25295,13 +25075,11 @@ Library {
 		  Name			  "If reading/writing words\nsmaller than 32 bits,\nchange address so\nthat addressing is\nbig endian inste"
 		  "ad of\nlittle, otherwise\npass through"
 		  Position		  [235, 77]
-		  ZOrder		  -1
 		}
 		Annotation {
 		  SID			  "112:37"
 		  Name			  "Use behavioural HDL\nso that gets optimised \nto minimum logic"
 		  Position		  [232, 322]
-		  ZOrder		  -2
 		}
 	      }
 	    }
@@ -25486,7 +25264,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		125
+		$ObjectID		122
 		$ClassName		"Simulink.Mask"
 		Type			"munge"
 		Description		"Splits an input bus into the specified number of divisions and then recombines them in the order speci"
@@ -25497,28 +25275,28 @@ Library {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  5
 		  Object {
-		    $ObjectID		    126
+		    $ObjectID		    123
 		    Type		    "edit"
 		    Name		    "divisions"
 		    Prompt		    "Number of divisions"
 		    Value		    "1"
 		  }
 		  Object {
-		    $ObjectID		    127
+		    $ObjectID		    124
 		    Type		    "edit"
 		    Name		    "div_size"
 		    Prompt		    "Division size (bits)"
 		    Value		    "32"
 		  }
 		  Object {
-		    $ObjectID		    128
+		    $ObjectID		    125
 		    Type		    "edit"
 		    Name		    "order"
 		    Prompt		    "Division packing order"
 		    Value		    "[0]"
 		  }
 		  Object {
-		    $ObjectID		    129
+		    $ObjectID		    126
 		    Type		    "popup"
 		    Array {
 		    Type		    "Cell"
@@ -25534,7 +25312,7 @@ Library {
 		    Evaluate		    "off"
 		  }
 		  Object {
-		    $ObjectID		    130
+		    $ObjectID		    127
 		    Type		    "edit"
 		    Name		    "bin_pt_out"
 		    Prompt		    "Output binary point"
@@ -25641,7 +25419,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		131
+		$ObjectID		128
 		$ClassName		"Simulink.Mask"
 		Type			"munge"
 		Description		"Splits an input bus into the specified number of divisions and then recombines them in the order speci"
@@ -25652,28 +25430,28 @@ Library {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  5
 		  Object {
-		    $ObjectID		    132
+		    $ObjectID		    129
 		    Type		    "edit"
 		    Name		    "divisions"
 		    Prompt		    "Number of divisions"
 		    Value		    "1"
 		  }
 		  Object {
-		    $ObjectID		    133
+		    $ObjectID		    130
 		    Type		    "edit"
 		    Name		    "div_size"
 		    Prompt		    "Division size (bits)"
 		    Value		    "32"
 		  }
 		  Object {
-		    $ObjectID		    134
+		    $ObjectID		    131
 		    Type		    "edit"
 		    Name		    "order"
 		    Prompt		    "Division packing order"
 		    Value		    "[0]"
 		  }
 		  Object {
-		    $ObjectID		    135
+		    $ObjectID		    132
 		    Type		    "popup"
 		    Array {
 		    Type		    "Cell"
@@ -25689,7 +25467,7 @@ Library {
 		    Evaluate		    "off"
 		  }
 		  Object {
-		    $ObjectID		    136
+		    $ObjectID		    133
 		    Type		    "edit"
 		    Name		    "bin_pt_out"
 		    Prompt		    "Output binary point"
@@ -25896,13 +25674,11 @@ Library {
 	      SID		      "112:46"
 	      Name		      "Undo address \nmanipulation for\nsimulated data"
 	      Position		      [244, 114]
-	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "112:47"
 	      Name		      "Undo data manipulation on way in and redo on way out for simulated data"
 	      Position		      [372, 308]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -25928,7 +25704,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    137
+	    $ObjectID		    134
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "munge"
 	    Description		    "Splits an input bus into the specified number of divisions and then recombines them in the orde"
@@ -25939,28 +25715,28 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      5
 	      Object {
-		$ObjectID		138
+		$ObjectID		135
 		Type			"edit"
 		Name			"divisions"
 		Prompt			"Number of divisions"
 		Value			"1"
 	      }
 	      Object {
-		$ObjectID		139
+		$ObjectID		136
 		Type			"edit"
 		Name			"div_size"
 		Prompt			"Division size (bits)"
 		Value			"32"
 	      }
 	      Object {
-		$ObjectID		140
+		$ObjectID		137
 		Type			"edit"
 		Name			"order"
 		Prompt			"Division packing order"
 		Value			"[0]"
 	      }
 	      Object {
-		$ObjectID		141
+		$ObjectID		138
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -25976,7 +25752,7 @@ Library {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		142
+		$ObjectID		139
 		Type			"edit"
 		Name			"bin_pt_out"
 		Prompt			"Output binary point"
@@ -26083,7 +25859,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    143
+	    $ObjectID		    140
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "munge"
 	    Description		    "Splits an input bus into the specified number of divisions and then recombines them in the orde"
@@ -26094,28 +25870,28 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      5
 	      Object {
-		$ObjectID		144
+		$ObjectID		141
 		Type			"edit"
 		Name			"divisions"
 		Prompt			"Number of divisions"
 		Value			"1"
 	      }
 	      Object {
-		$ObjectID		145
+		$ObjectID		142
 		Type			"edit"
 		Name			"div_size"
 		Prompt			"Division size (bits)"
 		Value			"32"
 	      }
 	      Object {
-		$ObjectID		146
+		$ObjectID		143
 		Type			"edit"
 		Name			"order"
 		Prompt			"Division packing order"
 		Value			"[0]"
 	      }
 	      Object {
-		$ObjectID		147
+		$ObjectID		144
 		Type			"popup"
 		Array {
 		  Type			  "Cell"
@@ -26131,7 +25907,7 @@ Library {
 		Evaluate		"off"
 	      }
 	      Object {
-		$ObjectID		148
+		$ObjectID		145
 		Type			"edit"
 		Name			"bin_pt_out"
 		Prompt			"Output binary point"
@@ -26479,7 +26255,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		149
+	$ObjectID		146
 	$ClassName		"Simulink.Mask"
 	Initialization		"fifo_mask;"
 	SelfModifiable		"on"
@@ -26487,7 +26263,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  5
 	  Object {
-	    $ObjectID		    150
+	    $ObjectID		    147
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -26501,7 +26277,7 @@ Library {
 	    Value		    "To Processor"
 	  }
 	  Object {
-	    $ObjectID		    151
+	    $ObjectID		    148
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -26516,7 +26292,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    152
+	    $ObjectID		    149
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -26535,14 +26311,14 @@ Library {
 	    Value		    "32"
 	  }
 	  Object {
-	    $ObjectID		    153
+	    $ObjectID		    150
 	    Type		    "edit"
 	    Name		    "data_bin_pt"
 	    Prompt		    "Data Binary Point:"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    154
+	    $ObjectID		    151
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -27105,7 +26881,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		155
+	$ObjectID		152
 	$ClassName		"Simulink.Mask"
 	Type			"xaui"
 	Description		"XAUI block for sending and receiving point-to-point, streaming data over the ROACH1 CX4 connectors. NOT"
@@ -27117,7 +26893,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  6
 	  Object {
-	    $ObjectID		    156
+	    $ObjectID		    153
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -27132,7 +26908,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    157
+	    $ObjectID		    154
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -27149,7 +26925,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    158
+	    $ObjectID		    155
 	    Type		    "checkbox"
 	    Name		    "open_phy"
 	    Prompt		    "Use KAT open PHY"
@@ -27157,7 +26933,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    159
+	    $ObjectID		    156
 	    Type		    "checkbox"
 	    Name		    "show_param"
 	    Prompt		    "---------------------- Show Implementation Parameters ----------------------------------------------"
@@ -27170,7 +26946,7 @@ Library {
 	    "ff','off'});\nend"
 	  }
 	  Object {
-	    $ObjectID		    160
+	    $ObjectID		    157
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -27188,7 +26964,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    161
+	    $ObjectID		    158
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -28276,7 +28052,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		162
+	$ObjectID		159
 	$ClassName		"Simulink.Mask"
 	Type			"xsg core config"
 	Description		"The XSG Core Config block is used to configure the System Generator design\nfor the casper_xps toolflow"
@@ -28290,7 +28066,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  8
 	  Object {
-	    $ObjectID		    163
+	    $ObjectID		    160
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -28308,7 +28084,7 @@ Library {
 	    Callback		    "xps_xsg_conf_callback;"
 	  }
 	  Object {
-	    $ObjectID		    164
+	    $ObjectID		    161
 	    Type		    "edit"
 	    Name		    "clk_src"
 	    Prompt		    "User IP Clock source"
@@ -28317,7 +28093,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    165
+	    $ObjectID		    162
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -28343,7 +28119,7 @@ Library {
 	    Callback		    "xps_xsg_conf_callback;"
 	  }
 	  Object {
-	    $ObjectID		    166
+	    $ObjectID		    163
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -28362,7 +28138,7 @@ Library {
 	    Callback		    "xps_xsg_conf_callback;"
 	  }
 	  Object {
-	    $ObjectID		    167
+	    $ObjectID		    164
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -28378,14 +28154,14 @@ Library {
 	    Callback		    "xps_xsg_conf_callback;"
 	  }
 	  Object {
-	    $ObjectID		    168
+	    $ObjectID		    165
 	    Type		    "edit"
 	    Name		    "clk_rate"
 	    Prompt		    "User IP Clock Rate (MHz)"
 	    Value		    "100"
 	  }
 	  Object {
-	    $ObjectID		    169
+	    $ObjectID		    166
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample Period"
@@ -28393,7 +28169,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    170
+	    $ObjectID		    167
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -28447,7 +28223,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		171
+	$ObjectID		168
 	$ClassName		"Simulink.Mask"
 	Type			"adc"
 	Description		"The ADC block converts analog inputs to digital outputs. Every clock cycle, the inputs are sampled and "
@@ -28460,7 +28236,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  4
 	  Object {
-	    $ObjectID		    172
+	    $ObjectID		    169
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -28474,21 +28250,21 @@ Library {
 	    Value		    "adc0"
 	  }
 	  Object {
-	    $ObjectID		    173
+	    $ObjectID		    170
 	    Type		    "edit"
 	    Name		    "adc_clk_rate"
 	    Prompt		    "ADC clock rate (MHz)"
 	    Value		    "800"
 	  }
 	  Object {
-	    $ObjectID		    174
+	    $ObjectID		    171
 	    Type		    "checkbox"
 	    Name		    "adc_interleave"
 	    Prompt		    "ADC interleave mode"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    175
+	    $ObjectID		    172
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample period"
@@ -32663,7 +32439,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		176
+	$ObjectID		173
 	$ClassName		"Simulink.Mask"
 	Type			"adc_083000x2"
 	Description		"The ADC block converts analog inputs to digital outputs. \nEvery clock cycle, the inputs are sampled an"
@@ -32677,63 +32453,63 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  9
 	  Object {
-	    $ObjectID		    177
+	    $ObjectID		    174
 	    Type		    "checkbox"
 	    Name		    "use_adc0"
 	    Prompt		    "Use ZD0K0?"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    178
+	    $ObjectID		    175
 	    Type		    "checkbox"
 	    Name		    "use_adc1"
 	    Prompt		    "Use ZDOK1?"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    179
+	    $ObjectID		    176
 	    Type		    "checkbox"
 	    Name		    "demux_adc"
 	    Prompt		    "Demux ADCs by 2?"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    180
+	    $ObjectID		    177
 	    Type		    "checkbox"
 	    Name		    "clock_sync"
 	    Prompt		    "Interleave 2 ADC boards?"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    181
+	    $ObjectID		    178
 	    Type		    "checkbox"
 	    Name		    "verbose"
 	    Prompt		    "Verbose Block Creation?"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    182
+	    $ObjectID		    179
 	    Type		    "checkbox"
 	    Name		    "using_ctrl"
 	    Prompt		    "Add ports for control registers?"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    183
+	    $ObjectID		    180
 	    Type		    "edit"
 	    Name		    "adc_clk_rate"
 	    Prompt		    "ADC clock rate (MHz)"
 	    Value		    "1000"
 	  }
 	  Object {
-	    $ObjectID		    184
+	    $ObjectID		    181
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample Period"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    185
+	    $ObjectID		    182
 	    Type		    "edit"
 	    Name		    "bit_width"
 	    Prompt		    "Output Bit Width"
@@ -32822,7 +32598,7 @@ Library {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    186
+	    $ObjectID		    183
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "adc_sim"
 	    Description		    "This block simulates the behavior of a demuxed ADC, which takes\nas input a waveform and return"
@@ -32832,14 +32608,14 @@ Library {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		187
+		$ObjectID		184
 		Type			"edit"
 		Name			"nStreams"
 		Prompt			"Number of Output Streams"
 		Value			"16"
 	      }
 	      Object {
-		$ObjectID		188
+		$ObjectID		185
 		Type			"edit"
 		Name			"bit_width"
 		Prompt			"Sample Bit Width"
@@ -32911,7 +32687,7 @@ Library {
 	      MaskHideContents	      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		189
+		$ObjectID		186
 		$ClassName		"Simulink.Mask"
 		Type			"of_detect_bus"
 		Initialization		"adc_overflow_detector_init(gcb, ...\n    'nStreams', nStreams, ...\n    'bit_width', bit_width);"
@@ -32919,14 +32695,14 @@ Library {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  2
 		  Object {
-		    $ObjectID		    190
+		    $ObjectID		    187
 		    Type		    "edit"
 		    Name		    "nStreams"
 		    Prompt		    "Number of Streams"
 		    Value		    "16"
 		  }
 		  Object {
-		    $ObjectID		    191
+		    $ObjectID		    188
 		    Type		    "edit"
 		    Name		    "bit_width"
 		    Prompt		    "Bit Width"
@@ -35752,7 +35528,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		192
+	$ObjectID		189
 	$ClassName		"Simulink.Mask"
 	Type			"mkadc  "
 	Description		"ADC1x1800-10\nSingle Input, Max 1.8G Sample, 10bit\nDemux by 4\nADC: e2v AT84AS008CGL\nDEMUX by 2: AT84"
@@ -35764,7 +35540,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  4
 	  Object {
-	    $ObjectID		    193
+	    $ObjectID		    190
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -35778,21 +35554,21 @@ Library {
 	    Value		    "adc0"
 	  }
 	  Object {
-	    $ObjectID		    194
+	    $ObjectID		    191
 	    Type		    "edit"
 	    Name		    "adc_clk_rate"
 	    Prompt		    "ADC clock rate (MHz)"
 	    Value		    "1800"
 	  }
 	  Object {
-	    $ObjectID		    195
+	    $ObjectID		    192
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample period"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    196
+	    $ObjectID		    193
 	    Type		    "checkbox"
 	    Name		    "gray_en"
 	    Prompt		    "Gray Code Enable"
@@ -40043,7 +39819,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		197
+	$ObjectID		194
 	$ClassName		"Simulink.Mask"
 	Type			"dram"
 	Description		"Interface to 1GB DDR2 DIMM of ROACH1 and the 2-4GB DDR3 DIMM of ROACH2.\nCommands that are clocked-in a"
@@ -40054,7 +39830,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  12
 	  Object {
-	    $ObjectID		    198
+	    $ObjectID		    195
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -40067,7 +39843,7 @@ Library {
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    199
+	    $ObjectID		    196
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -40082,49 +39858,49 @@ Library {
 	    Value		    "Unsigned"
 	  }
 	  Object {
-	    $ObjectID		    200
+	    $ObjectID		    197
 	    Type		    "edit"
 	    Name		    "bin_pt"
 	    Prompt		    "Data binary point"
 	    Value		    "0"
 	  }
 	  Object {
-	    $ObjectID		    201
+	    $ObjectID		    198
 	    Type		    "edit"
 	    Name		    "ip_clock"
 	    Prompt		    "Datapath clock rate (MHz)"
 	    Value		    "200"
 	  }
 	  Object {
-	    $ObjectID		    202
+	    $ObjectID		    199
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample period"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    203
+	    $ObjectID		    200
 	    Type		    "checkbox"
 	    Name		    "bram_fifos"
 	    Prompt		    "Use BRAM FIFOs"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    204
+	    $ObjectID		    201
 	    Type		    "checkbox"
 	    Name		    "disable_tag"
 	    Prompt		    "Disable tag FIFO"
 	    Value		    "on"
 	  }
 	  Object {
-	    $ObjectID		    205
+	    $ObjectID		    202
 	    Type		    "edit"
 	    Name		    "ram_depth"
 	    Prompt		    "Simulation address width"
 	    Value		    "18"
 	  }
 	  Object {
-	    $ObjectID		    206
+	    $ObjectID		    203
 	    Type		    "checkbox"
 	    Name		    "bank_mgt"
 	    Prompt		    "Enable bank management"
@@ -40132,7 +39908,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    207
+	    $ObjectID		    204
 	    Type		    "checkbox"
 	    Name		    "wide_data"
 	    Prompt		    "Use wide data bus (288 bits)"
@@ -40144,7 +39920,7 @@ Library {
 	    "MaskEnables', masks);\nend"
 	  }
 	  Object {
-	    $ObjectID		    208
+	    $ObjectID		    205
 	    Type		    "checkbox"
 	    Name		    "half_burst"
 	    Prompt		    "Use half-burst"
@@ -40152,7 +39928,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    209
+	    $ObjectID		    206
 	    Type		    "checkbox"
 	    Name		    "use_sniffer"
 	    Prompt		    "Include CPU Interface"
@@ -46524,7 +46300,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		210
+	$ObjectID		207
 	$ClassName		"Simulink.Mask"
 	Type			"generic_adc"
 	Description		"Generic ADC simulation block"
@@ -46535,28 +46311,28 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  7
 	  Object {
-	    $ObjectID		    211
+	    $ObjectID		    208
 	    Type		    "edit"
 	    Name		    "in"
 	    Prompt		    "inputs"
 	    Value		    "1"
 	  }
 	  Object {
-	    $ObjectID		    212
+	    $ObjectID		    209
 	    Type		    "edit"
 	    Name		    "out"
 	    Prompt		    "outputs per input"
 	    Value		    "4"
 	  }
 	  Object {
-	    $ObjectID		    213
+	    $ObjectID		    210
 	    Type		    "edit"
 	    Name		    "bits"
 	    Prompt		    "adc bit width"
 	    Value		    "8"
 	  }
 	  Object {
-	    $ObjectID		    214
+	    $ObjectID		    211
 	    Type		    "checkbox"
 	    Name		    "interleaved"
 	    Prompt		    "interleaved mode"
@@ -46564,7 +46340,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    215
+	    $ObjectID		    212
 	    Type		    "checkbox"
 	    Name		    "or_support"
 	    Prompt		    "over-range support"
@@ -46572,7 +46348,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    216
+	    $ObjectID		    213
 	    Type		    "checkbox"
 	    Name		    "sync_support"
 	    Prompt		    "sync support "
@@ -46580,7 +46356,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    217
+	    $ObjectID		    214
 	    Type		    "checkbox"
 	    Name		    "dv_support"
 	    Prompt		    "data valid support"
@@ -48251,7 +48027,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		218
+	$ObjectID		215
 	$ClassName		"Simulink.Mask"
 	Type			"gpio"
 	Description		"GPIO interfaces for ROACH and ROACH2 boards."
@@ -48261,7 +48037,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  12
 	  Object {
-	    $ObjectID		    219
+	    $ObjectID		    216
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -48296,7 +48072,7 @@ Library {
 	    "'on','on','on','on'});\nend"
 	  }
 	  Object {
-	    $ObjectID		    220
+	    $ObjectID		    217
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -48315,7 +48091,7 @@ Library {
 	    "'on','on','on','on'});\nend"
 	  }
 	  Object {
-	    $ObjectID		    221
+	    $ObjectID		    218
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -48331,7 +48107,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    222
+	    $ObjectID		    219
 	    Type		    "edit"
 	    Name		    "bitwidth"
 	    Prompt		    "Data bitwidth"
@@ -48339,7 +48115,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    223
+	    $ObjectID		    220
 	    Type		    "edit"
 	    Name		    "bin_pt"
 	    Prompt		    "Data binary point"
@@ -48347,7 +48123,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    224
+	    $ObjectID		    221
 	    Type		    "edit"
 	    Name		    "bit_index"
 	    Prompt		    "GPIO bit index"
@@ -48355,7 +48131,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    225
+	    $ObjectID		    222
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample period"
@@ -48363,7 +48139,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    226
+	    $ObjectID		    223
 	    Type		    "checkbox"
 	    Name		    "use_single_ended"
 	    Prompt		    "Use as single-ended"
@@ -48372,7 +48148,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    227
+	    $ObjectID		    224
 	    Type		    "checkbox"
 	    Name		    "use_ddr"
 	    Prompt		    "Use DDR"
@@ -48383,7 +48159,7 @@ Library {
 	    "es', {'on' 'on' 'on' 'on' 'on' 'on' 'on' 'on' 'on' 'on' 'on' 'on'});\nend"
 	  }
 	  Object {
-	    $ObjectID		    228
+	    $ObjectID		    225
 	    Type		    "checkbox"
 	    Name		    "reg_iob"
 	    Prompt		    "Pack register in the pad"
@@ -48391,7 +48167,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    229
+	    $ObjectID		    226
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -48408,7 +48184,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    230
+	    $ObjectID		    227
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -48441,7 +48217,7 @@ Library {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"3"
+	SIDHighWatermark	"6"
 	Block {
 	  BlockType		  Inport
 	  Name			  "gpio_out"
@@ -48527,7 +48303,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		231
+	$ObjectID		228
 	$ClassName		"Simulink.Mask"
 	Type			"katadc"
 	Initialization		"name = gcb;\nkatadc_init(gcb, ...\n    'name', name, ...\n    'adc_brd', adc_brd, ...\n    'adc_inte"
@@ -48537,7 +48313,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  6
 	  Object {
-	    $ObjectID		    232
+	    $ObjectID		    229
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -48552,7 +48328,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    233
+	    $ObjectID		    230
 	    Type		    "checkbox"
 	    Name		    "adc_interleave"
 	    Prompt		    "ADC interleave mode"
@@ -48560,7 +48336,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    234
+	    $ObjectID		    231
 	    Type		    "checkbox"
 	    Name		    "bypass_auto"
 	    Prompt		    "Bypass auto config"
@@ -48568,7 +48344,7 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    235
+	    $ObjectID		    232
 	    Type		    "checkbox"
 	    Name		    "en_gain"
 	    Prompt		    "Enable gain"
@@ -48576,14 +48352,14 @@ Library {
 	    Evaluate		    "off"
 	  }
 	  Object {
-	    $ObjectID		    236
+	    $ObjectID		    233
 	    Type		    "edit"
 	    Name		    "adc_clk_rate"
 	    Prompt		    "ADC sampling rate (MHz)"
 	    Value		    "800"
 	  }
 	  Object {
-	    $ObjectID		    237
+	    $ObjectID		    234
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample period"
@@ -52724,7 +52500,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		238
+	$ObjectID		235
 	$ClassName		"Simulink.Mask"
 	Type			"one_GbE"
 	Description		"This block sends and receives UDP frames (packets). It accepts a 8 bit wide data stream with user-deter"
@@ -52737,7 +52513,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  8
 	  Object {
-	    $ObjectID		    239
+	    $ObjectID		    236
 	    Type		    "checkbox"
 	    Name		    "local_en"
 	    Prompt		    "Enable fabric on startup"
@@ -52745,7 +52521,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    240
+	    $ObjectID		    237
 	    Type		    "checkbox"
 	    Name		    "dis_cpu_rx"
 	    Prompt		    "Disable CPU Rx"
@@ -52753,7 +52529,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    241
+	    $ObjectID		    238
 	    Type		    "checkbox"
 	    Name		    "dis_cpu_tx"
 	    Prompt		    "Disable CPU Tx"
@@ -52761,7 +52537,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    242
+	    $ObjectID		    239
 	    Type		    "checkbox"
 	    Name		    "cpu_promiscuous"
 	    Prompt		    "CPU Promiscuous"
@@ -52769,7 +52545,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    243
+	    $ObjectID		    240
 	    Type		    "edit"
 	    Name		    "local_mac"
 	    Prompt		    "Fabric MAC Address"
@@ -52777,7 +52553,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    244
+	    $ObjectID		    241
 	    Type		    "edit"
 	    Name		    "local_ip"
 	    Prompt		    "Fabric IP Address"
@@ -52785,7 +52561,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    245
+	    $ObjectID		    242
 	    Type		    "edit"
 	    Name		    "local_port"
 	    Prompt		    "Fabric UDP Port"
@@ -52793,7 +52569,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    246
+	    $ObjectID		    243
 	    Type		    "edit"
 	    Name		    "local_gateway"
 	    Prompt		    "Fabric Gateway"
@@ -54469,7 +54245,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		247
+	$ObjectID		244
 	$ClassName		"Simulink.Mask"
 	Type			"pcore"
 	Description		"Allows insertion of custom EDK pcores not distributed with base systems."
@@ -54477,7 +54253,7 @@ Library {
 	Display			"fprintf('PCORE');"
 	Object {
 	  $PropName		  "Parameters"
-	  $ObjectID		  248
+	  $ObjectID		  245
 	  $ClassName		  "Simulink.MaskParameter"
 	  Type			  "edit"
 	  Name			  "pcore_path"
@@ -54521,7 +54297,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		249
+	$ObjectID		246
 	$ClassName		"Simulink.Mask"
 	Initialization		"probe_mask;"
 	SelfModifiable		"on"
@@ -54529,7 +54305,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  7
 	  Object {
-	    $ObjectID		    250
+	    $ObjectID		    247
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -54557,7 +54333,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    251
+	    $ObjectID		    248
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -54576,7 +54352,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    252
+	    $ObjectID		    249
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -54594,7 +54370,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    253
+	    $ObjectID		    250
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -54612,7 +54388,7 @@ Library {
 	    Value		    "512"
 	  }
 	  Object {
-	    $ObjectID		    254
+	    $ObjectID		    251
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -54628,7 +54404,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    255
+	    $ObjectID		    252
 	    Type		    "edit"
 	    Name		    "bitwidth"
 	    Prompt		    "Data bit width"
@@ -54636,7 +54412,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    256
+	    $ObjectID		    253
 	    Type		    "edit"
 	    Name		    "bin_pt"
 	    Prompt		    "Data binary point"
@@ -54783,7 +54559,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		257
+	$ObjectID		254
 	$ClassName		"Simulink.Mask"
 	Type			"qdr"
 	Description		"Interface to the QDR II SRAM device on ROACH and ROACH2.\nFor ROACH, use only QDR chips qdr0 or qdr1.\n"
@@ -54794,7 +54570,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  3
 	  Object {
-	    $ObjectID		    258
+	    $ObjectID		    255
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -54810,14 +54586,14 @@ Library {
 	    Value		    "qdr0"
 	  }
 	  Object {
-	    $ObjectID		    259
+	    $ObjectID		    256
 	    Type		    "edit"
 	    Name		    "qdr_awidth"
 	    Prompt		    "Simulation QDR address width"
 	    Value		    "12"
 	  }
 	  Object {
-	    $ObjectID		    260
+	    $ObjectID		    257
 	    Type		    "checkbox"
 	    Name		    "use_sniffer"
 	    Prompt		    "Include CPU Interface"
@@ -54841,7 +54617,7 @@ Library {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"196"
+	SIDHighWatermark	"289"
 	SIDPrevWatermark	"101"
 	Block {
 	  BlockType		  Inport
@@ -56147,6 +55923,7 @@ Library {
 	      Position		      [425, 49, 455, 71]
 	      ZOrder		      -25
 	      ShowName		      off
+	      GotoTag		      "A"
 	    }
 	    Block {
 	      BlockType		      Goto
@@ -57885,13 +57662,11 @@ Library {
 	  "C will not see parity bits, so for convenience\nbits are remapped so that the MSBs are unread (rather than every 9t"
 	  "h bit)"
 	  Position		  [238, 660]
-	  ZOrder		  -1
 	}
 	Annotation {
 	  SID			  "334:94"
 	  Name			  "Put the MSBs back where they belong"
 	  Position		  [957, 334]
-	  ZOrder		  -2
 	}
       }
     }
@@ -57913,7 +57688,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		261
+	$ObjectID		258
 	$ClassName		"Simulink.Mask"
 	Type			"CASPER QuADC Interface Block"
 	Description		"Interface block for the CASPER Quad ADC board (ADC4x250-8)."
@@ -57923,7 +57698,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  2
 	  Object {
-	    $ObjectID		    262
+	    $ObjectID		    259
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -57938,7 +57713,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    263
+	    $ObjectID		    260
 	    Type		    "edit"
 	    Name		    "adc_clk_rate"
 	    Prompt		    "ADC Clock Rate (MHz)"
@@ -58423,7 +58198,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		264
+	$ObjectID		261
 	$ClassName		"Simulink.Mask"
 	Type			"swreg"
 	Initialization		"swreg_init(gcb)"
@@ -58432,7 +58207,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  10
 	  Object {
-	    $ObjectID		    265
+	    $ObjectID		    262
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -58450,7 +58225,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    266
+	    $ObjectID		    263
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -58469,7 +58244,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    267
+	    $ObjectID		    264
 	    Type		    "edit"
 	    Name		    "io_delay"
 	    Prompt		    "I/O delay"
@@ -58477,7 +58252,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    268
+	    $ObjectID		    265
 	    Type		    "edit"
 	    Name		    "sample_period"
 	    Prompt		    "Sample period"
@@ -58486,7 +58261,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    269
+	    $ObjectID		    266
 	    Type		    "edit"
 	    Name		    "names"
 	    Prompt		    "Name:"
@@ -58495,7 +58270,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    270
+	    $ObjectID		    267
 	    Type		    "edit"
 	    Name		    "bitwidths"
 	    Prompt		    "Bitwidth:"
@@ -58512,7 +58287,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    271
+	    $ObjectID		    268
 	    Type		    "edit"
 	    Name		    "arith_types"
 	    Prompt		    "Type (ufix=0, fix=1, bool=2):"
@@ -58529,7 +58304,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    272
+	    $ObjectID		    269
 	    Type		    "edit"
 	    Name		    "bin_pts"
 	    Prompt		    "Binary pt:"
@@ -58544,7 +58319,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    273
+	    $ObjectID		    270
 	    Type		    "checkbox"
 	    Name		    "sim_port"
 	    Prompt		    "Provide sim input/output?"
@@ -58553,7 +58328,7 @@ Library {
 	    TabName		    "Setup"
 	  }
 	  Object {
-	    $ObjectID		    274
+	    $ObjectID		    271
 	    Type		    "checkbox"
 	    Name		    "show_format"
 	    Prompt		    "Print format string?"
@@ -58579,7 +58354,7 @@ Library {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"6847"
+	SIDHighWatermark	"6859"
 	Block {
 	  BlockType		  Inport
 	  Name			  "out_reg"
@@ -58591,10 +58366,10 @@ Library {
 	Block {
 	  BlockType		  Reference
 	  Name			  "assert_reg"
-	  SID			  "332:6846"
+	  SID			  "332:6858"
 	  Ports			  [1, 1]
 	  Position		  [200, 100, 250, 120]
-	  ZOrder		  6791
+	  ZOrder		  6796
 	  ShowName		  off
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Assert"
@@ -58629,10 +58404,10 @@ Library {
 	Block {
 	  BlockType		  Reference
 	  Name			  "cast_gw"
-	  SID			  "332:6844"
+	  SID			  "332:6856"
 	  Ports			  [1, 1]
 	  Position		  [700, 100, 750, 120]
-	  ZOrder		  6789
+	  ZOrder		  6794
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Convert"
 	  SourceType		  "Xilinx Type Converter Block"
@@ -58667,10 +58442,10 @@ Library {
 	Block {
 	  BlockType		  Reference
 	  Name			  "io_delay"
-	  SID			  "332:6843"
+	  SID			  "332:6855"
 	  Ports			  [1, 1]
 	  Position		  [600, 100, 650, 120]
-	  ZOrder		  6788
+	  ZOrder		  6793
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Delay"
 	  SourceType		  "Xilinx Delay Block"
@@ -58698,10 +58473,10 @@ Library {
 	Block {
 	  BlockType		  Reference
 	  Name			  "reint1"
-	  SID			  "332:6847"
+	  SID			  "332:6859"
 	  Ports			  [1, 1]
 	  Position		  [300, 100, 350, 120]
-	  ZOrder		  6792
+	  ZOrder		  6797
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Reinterpret"
 	  SourceType		  "Xilinx Type Reinterpreter Block"
@@ -58729,10 +58504,10 @@ Library {
 	Block {
 	  BlockType		  Reference
 	  Name			  "xps_library_software_register_user_data_in"
-	  SID			  "332:6845"
+	  SID			  "332:6857"
 	  Ports			  [1, 1]
 	  Position		  [900, 100, 950, 120]
-	  ZOrder		  6790
+	  ZOrder		  6795
 	  LibraryVersion	  "1.2"
 	  SourceBlock		  "xbsIndex_r4/Gateway Out"
 	  SourceType		  "Xilinx Gateway Out Block"
@@ -58825,7 +58600,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		275
+	$ObjectID		272
 	$ClassName		"Simulink.Mask"
 	Type			"ten_GbE"
 	Description		"This block sends and receives UDP frames (packets). It accepts a 64 bit wide data stream with user-dete"
@@ -58838,7 +58613,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  11
 	  Object {
-	    $ObjectID		    276
+	    $ObjectID		    273
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -58855,7 +58630,7 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    277
+	    $ObjectID		    274
 	    Type		    "checkbox"
 	    Name		    "mac_lite"
 	    Prompt		    "Use light-weight MAC: Warning --> it DOES NOT check any CRC on receive"
@@ -58863,14 +58638,14 @@ Library {
 	    Tunable		    "off"
 	  }
 	  Object {
-	    $ObjectID		    278
+	    $ObjectID		    275
 	    Type		    "checkbox"
 	    Name		    "open_phy"
 	    Prompt		    "Use KAT open XAUI PHY"
 	    Value		    "off"
 	  }
 	  Object {
-	    $ObjectID		    279
+	    $ObjectID		    276
 	    Type		    "checkbox"
 	    Name		    "show_param"
 	    Prompt		    "---------------------- Show Implementation Parameters ----------------------------------------------"
@@ -58883,7 +58658,7 @@ Library {
 	    "es', {'on','on','on','on','off','off','off','off','off','off','off'});\nend"
 	  }
 	  Object {
-	    $ObjectID		    280
+	    $ObjectID		    277
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -58901,7 +58676,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    281
+	    $ObjectID		    278
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -58920,7 +58695,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    282
+	    $ObjectID		    279
 	    Type		    "checkbox"
 	    Name		    "fab_en"
 	    Prompt		    "Enable fabric on startup"
@@ -58929,7 +58704,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    283
+	    $ObjectID		    280
 	    Type		    "edit"
 	    Name		    "fab_mac"
 	    Prompt		    "Fabric MAC Address"
@@ -58938,7 +58713,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    284
+	    $ObjectID		    281
 	    Type		    "edit"
 	    Name		    "fab_ip"
 	    Prompt		    "Fabric IP Address"
@@ -58947,7 +58722,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    285
+	    $ObjectID		    282
 	    Type		    "edit"
 	    Name		    "fab_udp"
 	    Prompt		    "Fabric UDP Port"
@@ -58956,7 +58731,7 @@ Library {
 	    Visible		    "off"
 	  }
 	  Object {
-	    $ObjectID		    286
+	    $ObjectID		    283
 	    Type		    "edit"
 	    Name		    "fab_gate"
 	    Prompt		    "Fabric Gateway"
@@ -60585,7 +60360,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		287
+	$ObjectID		284
 	$ClassName		"Simulink.Mask"
 	Type			"ten_GbE_v2"
 	Description		"This block sends and receives UDP frames (packets). It accepts a 64 bit wide data stream with user-dete"
@@ -60598,7 +60373,7 @@ Library {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  39
 	  Object {
-	    $ObjectID		    288
+	    $ObjectID		    285
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60615,7 +60390,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    289
+	    $ObjectID		    286
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60630,7 +60405,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    290
+	    $ObjectID		    287
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60648,7 +60423,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    291
+	    $ObjectID		    288
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60665,7 +60440,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    292
+	    $ObjectID		    289
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60682,7 +60457,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    293
+	    $ObjectID		    290
 	    Type		    "checkbox"
 	    Name		    "rx_dist_ram"
 	    Prompt		    "Shallow RX Fifo (Beware overruns!)"
@@ -60690,7 +60465,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    294
+	    $ObjectID		    291
 	    Type		    "checkbox"
 	    Name		    "large_frames"
 	    Prompt		    "Enable Large TX Frames (8k+512)"
@@ -60698,7 +60473,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    295
+	    $ObjectID		    292
 	    Type		    "checkbox"
 	    Name		    "show_param"
 	    Prompt		    "---------------------- Show Implementation Parameters ----------------------------------------------"
@@ -60710,7 +60485,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    296
+	    $ObjectID		    293
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60741,7 +60516,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    297
+	    $ObjectID		    294
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60760,7 +60535,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    298
+	    $ObjectID		    295
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60800,7 +60575,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    299
+	    $ObjectID		    296
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60823,7 +60598,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    300
+	    $ObjectID		    297
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60854,7 +60629,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    301
+	    $ObjectID		    298
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -60874,7 +60649,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    302
+	    $ObjectID		    299
 	    Type		    "checkbox"
 	    Name		    "fab_en"
 	    Prompt		    "Enable fabric on startup"
@@ -60884,7 +60659,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    303
+	    $ObjectID		    300
 	    Type		    "edit"
 	    Name		    "fab_mac"
 	    Prompt		    "Fabric MAC Address"
@@ -60893,7 +60668,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    304
+	    $ObjectID		    301
 	    Type		    "edit"
 	    Name		    "fab_ip"
 	    Prompt		    "Fabric IP Address"
@@ -60902,7 +60677,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    305
+	    $ObjectID		    302
 	    Type		    "edit"
 	    Name		    "fab_udp"
 	    Prompt		    "Fabric UDP Port"
@@ -60911,7 +60686,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    306
+	    $ObjectID		    303
 	    Type		    "edit"
 	    Name		    "fab_gate"
 	    Prompt		    "Fabric Gateway"
@@ -60920,7 +60695,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    307
+	    $ObjectID		    304
 	    Type		    "checkbox"
 	    Name		    "cpu_rx_en"
 	    Prompt		    "Enable CPU RX"
@@ -60930,7 +60705,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    308
+	    $ObjectID		    305
 	    Type		    "checkbox"
 	    Name		    "cpu_tx_en"
 	    Prompt		    "Enable CPU TX"
@@ -60940,7 +60715,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    309
+	    $ObjectID		    306
 	    Type		    "edit"
 	    Name		    "ttl"
 	    Prompt		    "TTL"
@@ -60950,7 +60725,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    310
+	    $ObjectID		    307
 	    Type		    "checkbox"
 	    Name		    "promisc_mode"
 	    Prompt		    "Promiscuous mode"
@@ -60960,7 +60735,7 @@ Library {
 	    TabName		    "Core"
 	  }
 	  Object {
-	    $ObjectID		    311
+	    $ObjectID		    308
 	    Type		    "edit"
 	    Name		    "debug_ctr_width"
 	    Prompt		    "Debug counter width"
@@ -60968,7 +60743,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    312
+	    $ObjectID		    309
 	    Type		    "checkbox"
 	    Name		    "txctr"
 	    Prompt		    "TX - core_txctr"
@@ -60977,7 +60752,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    313
+	    $ObjectID		    310
 	    Type		    "checkbox"
 	    Name		    "txerrctr"
 	    Prompt		    "TX packet length error - core_txerrctr"
@@ -60990,7 +60765,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    314
+	    $ObjectID		    311
 	    Type		    "edit"
 	    Name		    "txerrctr_len"
 	    Prompt		    "    -- expected TX packet length"
@@ -60999,7 +60774,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    315
+	    $ObjectID		    312
 	    Type		    "checkbox"
 	    Name		    "txofctr"
 	    Prompt		    "TX overflow - core_txofctr"
@@ -61008,7 +60783,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    316
+	    $ObjectID		    313
 	    Type		    "checkbox"
 	    Name		    "txfullctr"
 	    Prompt		    "TX full - core_txfullctr"
@@ -61017,7 +60792,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    317
+	    $ObjectID		    314
 	    Type		    "checkbox"
 	    Name		    "txvldctr"
 	    Prompt		    "TX valid cycle - core_txvldctr"
@@ -61026,7 +60801,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    318
+	    $ObjectID		    315
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -61047,7 +60822,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    319
+	    $ObjectID		    316
 	    Type		    "checkbox"
 	    Name		    "rxctr"
 	    Prompt		    "RX - core_rxctr"
@@ -61056,7 +60831,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    320
+	    $ObjectID		    317
 	    Type		    "checkbox"
 	    Name		    "rxerrctr"
 	    Prompt		    "RX packet length error - core_rxerrctr"
@@ -61069,7 +60844,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    321
+	    $ObjectID		    318
 	    Type		    "edit"
 	    Name		    "rxerrctr_len"
 	    Prompt		    "    -- expected RX packet length"
@@ -61078,7 +60853,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    322
+	    $ObjectID		    319
 	    Type		    "checkbox"
 	    Name		    "rxofctr"
 	    Prompt		    "RX overflow - core_rxofctr"
@@ -61087,7 +60862,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    323
+	    $ObjectID		    320
 	    Type		    "checkbox"
 	    Name		    "rxbadctr"
 	    Prompt		    "RX bad - core_rxbadctr"
@@ -61096,7 +60871,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    324
+	    $ObjectID		    321
 	    Type		    "checkbox"
 	    Name		    "rxvldctr"
 	    Prompt		    "RX valid cycle - core_rxvldctr"
@@ -61105,7 +60880,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    325
+	    $ObjectID		    322
 	    Type		    "checkbox"
 	    Name		    "rxeofctr"
 	    Prompt		    "RX eof - core_rxeofctr"
@@ -61114,7 +60889,7 @@ Library {
 	    TabName		    "Debug counters"
 	  }
 	  Object {
-	    $ObjectID		    326
+	    $ObjectID		    323
 	    Type		    "popup"
 	    Array {
 	      Type		      "Cell"
@@ -61152,7 +60927,7 @@ Library {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"52"
-	SIDHighWatermark	"1252"
+	SIDHighWatermark	"1339"
 	SIDPrevWatermark	"565"
 	Block {
 	  BlockType		  Inport
@@ -63286,7 +63061,7 @@ Library {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		327
+	$ObjectID		324
 	$ClassName		"Simulink.Mask"
 	Type			"ucf"
 	Description		"Allows insertion of custom constraints into a compile. "
@@ -63294,7 +63069,7 @@ Library {
 	Display			"fprintf('UCF');"
 	Object {
 	  $PropName		  "Parameters"
-	  $ObjectID		  328
+	  $ObjectID		  325
 	  $ClassName		  "Simulink.MaskParameter"
 	  Type			  "edit"
 	  Name			  "ucf_file"
@@ -63340,14 +63115,12 @@ Library {
       "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
       Position		      [15, 192]
       HorizontalAlignment     "left"
-      ZOrder		      -1
       FontName		      "Lucida Console"
       FontSize		      9
     }
     Annotation {
       SID		      "328"
       Position		      [972, 747]
-      ZOrder		      -2
     }
   }
 }
