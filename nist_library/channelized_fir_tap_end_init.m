@@ -20,7 +20,7 @@
 %   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function channelized_fir_tap_odd_end_init(blk, varargin)
+function channelized_fir_tap_end_init(blk, varargin)
 	clog('entering channelized_fir_start_tap_init', 'trace');
 
 	defaults = { ...
@@ -36,10 +36,14 @@ function channelized_fir_tap_odd_end_init(blk, varargin)
 	value                       = get_var('value', 'defaults', defaults, varargin{:});
 
 	% default empty block for storage in library and check parameters if active
-    if value == 0
-        return;
-    end
-    if numChan < 8
+    
+    if numChan == 0
+		clean_blocks(blk);
+        set_param(blk, 'AttributesFormatString', '');
+		save_state(blk, 'defaults', defaults, varargin{:});  % Save and back-populate mask parameter values
+		return;
+        
+    elseif numChan < 8
         clog('need at least 8 Channels', {'error', 'channelized_fir_start_tap_init_debug'});
         error('need at least 8 Channels');
         return;

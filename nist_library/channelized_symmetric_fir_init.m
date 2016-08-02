@@ -20,7 +20,7 @@
 %   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function channelized_fir_init(blk, varargin)
+function channelized_symmetric_fir_init(blk, varargin)
 	clog('entering channelized_fir_init', 'trace');
 
 	defaults = { ...
@@ -36,18 +36,15 @@ function channelized_fir_init(blk, varargin)
 	coeff                       = get_var('coeff', 'defaults', defaults, varargin{:});
 
 	% default empty block for storage in library and check parameters if active
-    if coeff == 0
+	if coeff == 0
 		clean_blocks(blk);
 		set_param(blk, 'AttributesFormatString', '');
 		save_state(blk, 'defaults', defaults, varargin{:});  % Save and back-populate mask parameter values
 		%clog('entering channelized_fir_init','trace');
 		return;
-    end
-    
-    if numChan == 0
+
+	elseif numChan == 0
 		clean_blocks(blk);
-        set_param(blk, 'AttributesFormatString', '');
-		save_state(blk, 'defaults', defaults, varargin{:});  % Save and back-populate mask parameter values
 		return;
         
 	elseif numChan < 8
@@ -86,36 +83,54 @@ function channelized_fir_init(blk, varargin)
                     'numChan', num2str(numChan), ...
                     'value', num2str(fir_coeff(index)));
 
-            add_line(blk,[port_name,'/1'], [tap_name,'/',num2str(1)]);
+            add_line(blk,[port_name,'/1'], [tap_name,'/',num2str(2)]);
             
         elseif index == length(fir_coeff)
             xsize = 120;
             ysize = 142;
             tap_name_p = tap_name;
-            tap_name = ['end_tap' num2str(index)];
+            tap_name = ['odd_tap' num2str(index)];
             position = [xoff+index*2*xinc -ysize xoff+xsize+index*2*xinc 0];
-            reuse_block(blk, tap_name, 'nist_library/channelized_fir/end_tap', ...
+            reuse_block(blk, tap_name, 'nist_library/channelized_fir/odd_tap', ...
                     'Position', position, ...
                     'numChan', num2str(numChan), ...
                     'value', num2str(fir_coeff(index)));
 
-            add_line(blk,[tap_name_p,'/2'], [tap_name,'/2']);
-            add_line(blk,[tap_name_p,'/1'], [tap_name,'/1']);
-                    
-        else
+            add_line(blk,[tap_name_p,'/2'], [tap_name,'/1']);
+            add_line(blk,[tap_name_p,'/3'], [tap_name,'/2']);
+            add_line(blk,[tap_name,'/1'], [tap_name_p,'/1']);
+            
+        elseif index == 2
             xsize = 120;
-            ysize = 142;
+            ysize = 208;
 
             tap_name_p = tap_name;
             tap_name = ['sym_tap' num2str(index)];
             position = [xoff+index*2*xinc -ysize xoff+xsize+index*2*xinc 0];
-            reuse_block(blk, tap_name, 'nist_library/channelized_fir/tap', ...
+            reuse_block(blk, tap_name, 'nist_library/channelized_fir/sym_tap', ...
+                    'Position', position, ...
+                    'numChan', num2str(numChan), ...
+                    'value', num2str(fir_coeff(index)));
+
+            add_line(blk,[tap_name_p,'/2'], [tap_name,'/3']);
+            add_line(blk,[tap_name_p,'/1'], [tap_name,'/2']);
+            add_line(blk,[tap_name,'/1'], [tap_name_p,'/1']);
+        
+        else
+            xsize = 120;
+            ysize = 208;
+
+            tap_name_p = tap_name;
+            tap_name = ['sym_tap' num2str(index)];
+            position = [xoff+index*2*xinc -ysize xoff+xsize+index*2*xinc 0];
+            reuse_block(blk, tap_name, 'nist_library/channelized_fir/sym_tap', ...
                     'Position', position, ...
                     'numChan', num2str(numChan), ...
                     'value', num2str(fir_coeff(index)));
 
             add_line(blk,[tap_name_p,'/2'], [tap_name,'/2']);
-            add_line(blk,[tap_name_p,'/1'], [tap_name,'/1']);
+            add_line(blk,[tap_name_p,'/3'], [tap_name,'/3']);
+            add_line(blk,[tap_name,'/1'], [tap_name_p,'/1']);
         end % end if control 
         
 
@@ -126,7 +141,7 @@ function channelized_fir_init(blk, varargin)
     port_offset = 0;
     position = [xoff+(1+index)*2*xinc -16 xoff+(1+index)*2*xinc+30 0];
     reuse_block(blk, port_name, 'built-in/Outport', 'Port', num2str(port_offset+1), 'Position', position);
-    add_line(blk,[tap_name,'/1'], [port_name,'/1']);
+    add_line(blk,[tap_name,'/2'], [port_name,'/1']);
 end % pfb_fir_generic_init
 
 
