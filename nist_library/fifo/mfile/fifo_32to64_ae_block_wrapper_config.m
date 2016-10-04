@@ -96,9 +96,9 @@ function fifo_32to64_ae_block_wrapper_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/fifo/hdl/vhdl/fifo_32to64_ae_block_wrapper.vhd');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/fifo/hdl/vhdl/fifo_32to64_ae_block.vhd');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/fifo/hdl/ngc/fifo_32to64_ae_block.ngc');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/fifo/hdl/vhdl/fifo_32to64_ae_block_wrapper.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/fifo/hdl/vhdl/fifo_32to64_ae_block.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/fifo/hdl/ngc/fifo_32to64_ae_block.ngc');
 
 return;
 

@@ -107,7 +107,7 @@ function channelized_fir_init(blk, varargin)
             ysize = 142;
 
             tap_name_p = tap_name;
-            tap_name = ['sym_tap' num2str(index)];
+            tap_name = ['tap' num2str(index)];
             position = [xoff+index*2*xinc -ysize xoff+xsize+index*2*xinc 0];
             reuse_block(blk, tap_name, 'nist_library/channelized_fir/tap', ...
                     'Position', position, ...

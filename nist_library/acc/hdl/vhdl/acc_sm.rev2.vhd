@@ -91,10 +91,8 @@ Architecture Behavioral Of acc_sm Is
 
 				When Send_ACC_Data =>
 					chan_count					<= chan_count + 1;
-					If (chan_in >= unsigned(channel_count) - 1) Then
-						stop_count					<= stop_count + 1;
-						start_count					<= start_count + 1;
-					End If;
+					stop_count					<= stop_count + 1;
+					start_count					<= start_count + 1;
 					chan_out					<= std_logic_vector(chan_count);
 					data_out_valid				<= '1';
 					add_reset					<= '1';
@@ -102,23 +100,19 @@ Architecture Behavioral Of acc_sm Is
 					    State           		<= Pause0;
 					Else
 						State					<= Send_ACC_Data;
-					End If;
+					End IF;
 
 				When Pause0 =>
-					If (chan_in >= unsigned(channel_count) - 1) Then
-						stop_count					<= stop_count + 1;
-						start_count					<= start_count + 1;
-					End If;
+					stop_count					<= stop_count + 1;
+					start_count					<= start_count + 1;
 					chan_out					<= (Others => '0');
 					chan_count					<= (Others => '0');
 					data_out_valid				<= '0';
 					State           			<= Blank_ACC;
 
 				When Blank_ACC =>
-					If (chan_in >= unsigned(channel_count) - 1) Then
-						stop_count					<= stop_count + 1;
-						start_count					<= start_count + 1;
-					End If;
+					stop_count					<= stop_count + 1;
+					start_count					<= start_count + 1;
 					chan_count					<= chan_count + 1;
 					chan_out					<= std_logic_vector(chan_count);
 					data_out_valid				<= '0';
@@ -131,10 +125,8 @@ Architecture Behavioral Of acc_sm Is
 					End IF;
 
 				When Blanking_Wait =>
-					If (chan_in >= unsigned(channel_count) - 1) Then
-						stop_count					<= stop_count + 1;
-						start_count					<= start_count + 1;
-					End If;
+					stop_count					<= stop_count + 1;
+					start_count					<= start_count + 1;
 					chan_count					<= (Others => '0');
 					chan_out					<= (Others => '0');
 					add_reset					<= '0';
@@ -148,9 +140,7 @@ Architecture Behavioral Of acc_sm Is
 					End IF;
 
 				When Accumulate =>
-					If (chan_in >= unsigned(channel_count) - 1) Then
-						start_count					<= start_count + 1;
-					End If;
+					start_count 				<= start_count + 1;
 					chan_out					<= chan_in;
 					data_out_valid				<= '0';
 					add_reset					<= '0';

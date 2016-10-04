@@ -134,7 +134,7 @@ function data_packetizer_sm_v2_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/data_handler/hdl/vhdl/data_packetizer_sm_v2.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/data_handler/hdl/vhdl/data_packetizer_sm_v2.vhd');
 
 return;
 

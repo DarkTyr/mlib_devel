@@ -78,9 +78,9 @@ function add_64plus64_out64_wrapper_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/math/hdl/vhdl/add_64plus64_out64_wrapper.vhd');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/math/hdl/vhdl/add_64plus64_out64.vhd');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/math/hdl/ngc/add_64plus64_out64.ngc');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/math/hdl/vhdl/add_64plus64_out64_wrapper.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/math/hdl/vhdl/add_64plus64_out64.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/math/hdl/ngc/add_64plus64_out64.ngc');
 
 return;
 

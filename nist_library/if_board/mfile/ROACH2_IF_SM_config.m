@@ -78,7 +78,7 @@ function ROACH2_IF_SM_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/if_board/hdl/vhdl/ROACH2_IF_SM.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/if_board/hdl/vhdl/ROACH2_IF_SM.vhd');
 
 return;
 

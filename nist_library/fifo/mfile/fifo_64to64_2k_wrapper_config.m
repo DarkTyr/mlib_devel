@@ -92,9 +92,9 @@ function fifo_64bitIn_64bitOut_wrapper_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/fifo/hdl/vhdl/fifo_64to64_2k_wrapper.vhd');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/fifo/hdl/vhdl/fifo_64to64_2k.vhd');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/fifo/hdl/vhdl/fifo_64to64_2k.ngc');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/fifo/hdl/vhdl/fifo_64to64_2k_wrapper.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/fifo/hdl/vhdl/fifo_64to64_2k.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/fifo/hdl/ngc/fifo_64to64_2k.ngc');
 
 return;
 

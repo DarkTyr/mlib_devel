@@ -107,7 +107,7 @@ function acc_sm_config(this_block)
 
   %    this_block.addFile('');
   %    this_block.addFile('');
-  this_block.addFile('../uWaveMux-mlib-devel/nist_library/acc/hdl/vhdl/acc_sm.vhd');
+  this_block.addFile('../../gitrepo/mlib_devel/nist_library/acc/hdl/vhdl/acc_sm.vhd');
 
 return;
 
