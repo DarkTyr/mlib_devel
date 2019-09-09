@@ -23,4 +23,5 @@ if length(getenv('CASPER_BACKPORT')) > 0
 else
   load_system('casper_library');
   load_system('xps_library');
+  load_system('nist_library');
 end
